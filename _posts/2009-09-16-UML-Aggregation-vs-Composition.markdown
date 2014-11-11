@@ -19,3 +19,5 @@ Lets start with the engine class. This is quite a vital part of the car, you cou
 The remaining fluffy dice class is a bit of a looser relationship. A cars function does not depend on the tacky fluffy dice attached to the mirror. The car may not even have fluffy dice. So, this demonstrates quite nicely a Aggregation relationship.
 
 So, our resulting class diagram looks something like this…
+
+![Aggregation and Composition](/images/ClassDiagram.jpg)
