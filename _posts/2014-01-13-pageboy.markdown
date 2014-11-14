@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "Introducing Pageboy.js"
+date:   2014-01-13 11:20
+categories: Javascript, TDD
+---
+
+Recently, I was explaining how to Test Drive Javascript with DOM interaction and one of the audience mentioned that they found the tests unreadable. The tests had been written in [qunit](http://qunitjs.com/) and used [jQuery](http://jquery.com/) to interact with the test fixture in the DOM, here is a similar example:
+
+```javascript
+test('Hello displayed When clicking on Hello button', function(){  
+  $('#hello').trigger('click');  
+  ok($('#helloDisplay').is(":visible"));  
+});  
+```
+
+If you’ve used jQuery before, you should be able to decipher that this test is about clicking one element and checking the effect on another. But if you’re new to jQuery this maybe confusing, you’d have to investigate the framework and find out what the dollar ($) function did and the subsequent calls to trigger() and is(). Even experienced jQuery users might struggle to understand the meaning if there are multiple DOM interactions within the test.
+
+So, I started to think about the possibility of creating a Domain Specific Language (DSL) to make DOM interactions in Javascript unit tests more readable. The result of this is my new open source project **pageboy.js**.
+
+The inspiration for pageboy.js is the DSL that Capybara in Ruby uses to interact with the DOM. Capybara is a wrapper around DOM interaction that can be used in the step definitions in Cucumber BDD tests. The interactions with the DOM through the DSL are both concise and descriptive, which is what I want **pageboy.js** to aspire to be.
+
+Once completed, the example above could be rewritten with **pageboy.js** as:
+
+```javascript
+test('Hello displayed When clicking on Hello button', function(){  
+  clickButton('hello');  
+  ok(find('helloDisplay').isVisible);  
+});
+```
+
+For more information or to get involved visit **pageboy.js** on [github](https://github.com/iainjmitchell/pageboy.js)

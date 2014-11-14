@@ -10,10 +10,9 @@ url: "http://iainjmitchell.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 permalink: /blog/:title
-highlighter: rouge
 exclude: ["gems"]
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 gems:
   - jekyll-redirect-from
