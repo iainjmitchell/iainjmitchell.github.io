@@ -3,7 +3,6 @@ layout: post
 title:  "UML Aggregation vs Compostion"
 date:   2009-09-16 19:49:51
 categories: UML
-redirect_from: /blog/index.html?p=32
 ---
 A colleague asked me a few weeks ago for some advice about their UML class diagram. One of the issues they were having was deciding on whether the link between two of the classes should have a “filled-in” or “non-filled-in” diamond.
 
