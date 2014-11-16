@@ -1,3 +1,19 @@
-<script>
-	console.log('yack')
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+	var redirects = {
+		'p=32' : '/blog/uml-aggregation-vs-composition',
+		'p=142' : '/blog/jquery-to-talk-to-wcf-2',
+		'p=97' : '/blog/jquery-to-talk-to-wcf-1',
+		'p=884' : '/blog/mongo-repository',
+		'p=1147' : '/blog/fantasy-world-built-of-metrics/',
+		'p=1308' : '/blog/pageboy/'
+	};
+	var pageQuery = window.location.search.substr(1).split('&')[0];
+	if (!!pageQuery){
+		var redirectUrl = redirects[pageQuery];
+		if(!!redirectUrl){
+			var baseUrl = window.location.protocol+"//"+window.location.host;
+			window.location.replace(redirectUrl);
+		}
+	}		
 </script>
