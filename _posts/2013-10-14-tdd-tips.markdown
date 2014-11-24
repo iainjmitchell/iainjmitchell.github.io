@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "8 Test Driven Development tips"
+date:   2013-10-14 14:00
+categories: TDD, Refactoring
+---
+**1. Have a failing test** – The red stage is the first of the TDD cycle, it is complete when only one test is failing AND the test is failing on the expected assertion.  Seeing the test fail is an important validation of the criteria of the test, so avoid temptation to leap into the implementation without running the tests.
+
+**2. Simplest implementation** – The objective of the second (green) stage of TDD is to implement just enough to make the failing test pass.  Follow a “**You Ain’t Gonna Need It**” (YAGNI) approach and don’t try to second guess subsequent tests.
+
+**3. Don’t forget to refactor!** – The third stage of TDD is refactor, so after the simplest implementation deal with every [code smell](http://www.dcs.gla.ac.uk/~hcp/psd/lectures/badsmells.pdf "Summary of common code smells") you can find, rather than batching up problems for later.
+
+**4. Delete redundant tests** – Sometimes we write a test to help us get somewhere, but it may become superseded by a following test.  If this is the case, delete the redundant test, it no longer has any value and may cause confusion in the future.
+
+**5. Exposing/Adding class members for testing purposes** – Avoid exposing anything unnecessary on the class being tested.  Typical examples of this are public flag properties introduced for easy assertions, or making a private method public to test it in isolation.  Difficult to test code _is a sign that it needs refactoring_.
+
+**6. Don’t refactor your tests** – Often tests have similar setup and so it can be tempting to use a Setup method to reduce repetition.  I’d avoid doing this for two reasons: 1) There is a danger that an order dependency can build up between tests, for example test 2 will only run if test 1 sets up the class correctly; 2) It can hide the pain of using the class, for example the class might have too may dependencies.  Difficult to set-up code _is a sign that it needs refactoring_.
+
+**7. Clear test names** – The name of the test should mention the expected outcome and any preconditions, for example ‘IfThereIsNoFoodThenCatMeows‘.  Writing the test name after writing the test is a good technique to achieve this.
+
+**8. TDD with a friend** – pairing on TDD makes it far more enjoyable, try ping pong pairing like this:
+
+*   Jimmy writes a failing test
+*   Max make it pass in the simplest way
+*   Jimmy refactors
+*   Max writes a failing test… etc
