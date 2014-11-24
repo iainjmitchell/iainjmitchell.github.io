@@ -1,0 +1,39 @@
+---
+layout: post
+title:  "Cross-Origin Resource Sharing (CORS)"
+date:   2011-10-11 14:57
+categories: AJAX, Javascript, jQuery
+---
+### COR blimey, what’s this all about?
+
+A common requirement of websites is to display data retrieved from a web service in another domain, for example the Twitter or Google API.  Unfortunately, standard Javascript AJAX calls to resources outside the domain will fail.  This is due to safety measures put in place to prevent cross site scripting attacks.  
+
+To work around this, many Javascript libraries implement [JSONP](http://en.wikipedia.org/wiki/JSONP), which allows cross domain retrieval of resources by the use of a script tag (the script tag in HTML does not fall under the same origin policy).  
+
+The problem with JSONP is that it feels like a hack, a hole in HTML that has been exploited to enable the cross domain retrieval.  A side effect of this is that JSONP only supports GET HTTP requests.
+
+There is however, an alternative that supports all HTTP request types, this is called **Cross-Origin Resource Sharing** (CORS).
+
+### Support
+
+First off, I should make it clear that **CORS** fits into the category ‘_kinda supported in most modern browsers_‘. Forget it if you’re using anything below Internet Explorer(IE) 8, and also there is currently no support in Opera.
+
+### How it works
+
+From a client perspective, CORS is implemented in the [XmlHttpRequest](http://en.wikipedia.org/wiki/XMLHttpRequest) API (or XDomainRequest if you’re using IE).  For a CORS request an extra setting called _Origin_ is added to the request headers, this is set to the domain of the web site that is making the request (see screenshot below for an example).
+
+[![](/images/request.png)
+
+In order to allow CORS requests, the external domain server must have CORS enabled (see [this](http://www.w3.org/wiki/CORS_Enabled) site for details).  When this is active response headers will include the setting  _Access-Control-Allow-Origin_ (see screenshot below), which is used to specify which domains the response can be sent to – this setting is usually set to * (every domain).
+
+[![](/images/response.png)
+
+### CORS in jQuery.ajax()
+
+Standard CORS (XmlHttpRequest browsers) is supported jQuery.ajax(), however the IE XDomainRequest variety is currently not.  There is a jQuery extension called [jQuery.iecors](https://github.com/dkastner/jquery.iecors) that wraps the existing $.ajax() call and handles IE style CORS.
+
+### Lessons learned from using CORS
+
+*   Be aware that it is NOT implemented in all browsers.
+*   If you’re resource provider has not enabled CORS you cannot use it.
+*   Ensure that you deal with IE’s different implementation.
