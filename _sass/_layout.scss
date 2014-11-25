@@ -181,7 +181,9 @@
 }
 
 .post {
-    margin-bottom: $spacing-unit;
+    padding-top: $spacing-unit/2;
+    padding-bottom: $spacing-unit;
+    border-bottom: $grey-color solid 1px;
 }
 
 .post-meta {
