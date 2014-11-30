@@ -20,9 +20,14 @@
     float: left;
 
     &,
-    &:visited {
+    &:visited, &:hover {
         color: $header-color;
     }
+}
+
+.site-title:hover, .page-link:hover {
+    color: #D0D0D0;
+    text-decoration: none;
 }
 
 .site-nav {
@@ -140,11 +145,6 @@
 @include media-query($on-laptop) {
     .footer-col-1,
     .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-
-    .footer-col-3 {
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
     }

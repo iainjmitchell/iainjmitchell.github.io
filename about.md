@@ -4,8 +4,16 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Software Developer based in Manchester, UK.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+Has worked with companies such as [LateRooms.com](http://laterooms.com), [Parexel](http://www.parexel.com), [Allegro Networks](http://www.allegro.net/), [Code Computerlove](http://codecomputerlove.com) and [Waters](http://www.waters.com)
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Runs [Manchester Codejo](http://manchester-codejo.com/)
+
+Does .NET, C#, Ruby, Javascript (inc. nodeJS).
+
+Has forgotten Delphi.
+
+Likes TDD, XP, Agile & lean
+
+Dislikes Paperwork/general bureaucracy
