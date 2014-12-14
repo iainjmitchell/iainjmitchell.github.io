@@ -7,14 +7,17 @@ permalink: /blog/
 	{% for post in site.posts %}
 	  <article class="post">
 	  	<header>
-		    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} on {{post.categories | join: ' '}}</span> 
 		    <h2>
-		      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+		      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 		    </h2>
+		    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} on {{post.categories | join: ' '}}</span> 
 	    </header>
 	    <section class="post-except">
 	    	{{ post.content | strip_html | truncatewords:50}}
 	    </section>
+	    <div class="continue-reading">
+	    	<a href="{{ post.url | prepend: site.baseurl }}">Continue reading >></a>
+		</div>
 	  </article>
 	{% endfor %}
 </div>
