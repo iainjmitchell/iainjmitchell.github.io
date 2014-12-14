@@ -146,15 +146,6 @@
     font-size: 20px;
 }
 
-.post-list {
-    margin-left: 0;
-    list-style: none;
-
-    > li {
-        margin-bottom: $spacing-unit;
-    }
-}
-
 .post {
     padding: $spacing-unit/2 0;
     border-bottom: 1px solid #e6eaed;
@@ -181,7 +172,29 @@
     }
 }
 
+.post-list {
+    margin-left: 0;
+    list-style: none;
 
+    > li {
+        margin-bottom: $spacing-unit/2;
+    }
+}
+
+.post-link {
+    margin-left: $spacing-unit;
+    font-weight: 600;
+    color: $text-color;
+    &:hover {
+        color: $grey-color;
+    }
+}
+
+.post-date {
+    width: 150px;
+    display: inline-block;
+    text-align: right;
+}
 
 /**
  * Posts
