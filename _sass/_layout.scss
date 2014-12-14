@@ -160,6 +160,7 @@
     border-bottom: 1px solid #e6eaed;
     header {
         h2, a {
+            line-height: 1.2;
             color: $text-color;
             &:hover {
                 color: $grey-color;
