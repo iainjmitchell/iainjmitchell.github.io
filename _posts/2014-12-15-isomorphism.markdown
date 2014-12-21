@@ -50,9 +50,6 @@ Programming languages are a form of Formal Systems, so it's unsurprising that th
 ```csharp
 people.Select(p => new { Name = p, p.Length }); 
 ```
-What is *p*?  A sensible suggestion would be person as the collection is  named people, but it could be pupil or even something not beginning with the letter p.
+But what is *p*?  A sensible suggestion would be person as the collection is named people, but it could be pupil or even something not beginning with the letter p.
 
-The lack of clarity could cause confusion to future readers of this code, it may even lead them to wrong assumptions. This is why naming is often the most important refactoring we can do to a code base.  Especially the removal of abbreviations that can lead to different interpretations or isomorphisms.
-
-
-* Thanks to [@up\_and\_adam](https://twitter.com/up_and_adam) to putting me onto this book.
+The lack of clarity could cause confusion to future readers of this code, it may even lead them to wrong assumptions. This is why naming is often the most important refactoring we can do to a code base, especially the removal of abbreviations that can lead to different interpretations or isomorphisms.
