@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "Chess"
+date:   2014-12-31 13:00:51
+categories: CRC, OO
+---
+
+Over the last few days I've been attempting to discover the objects and interactions for the game of chess.  After writing down the basic rules of pawns I identified the following candidate objects, using noun analysis:
+
+* Pawn
+* Square
+* Piece
+* Check
+* Board
+* Player
+* Game
+* King
+* Move
+
+Using these I've run a couple of [CRC card](http://en.wikipedia.org/wiki/Class-responsibility-collaboration_card) sessions to try and work out the objects, their responsibilities and interactions.  I'm trying to model the game in a strict Object Orientated fashion, by protecting object state by following the principle of [Tell Don't Ask](https://pragprog.com/articles/tell-dont-ask).
+
+The issue I am having is seems that the pawn should have the responsibility of looking after it's rules of movement. BUT some of the rules are dependent on the state of the board.  For example, a pawn cannot move one space forward if there is another piece in the way.
+
+I did play around with the idea that the pawn could approve this move, tell the board of the intention and then the board could block the move.  However, this does not work with a second scenario I ran through.  This involved moving the pawn diagonally to the left, which is only legal if an opposition piece occupies the square.
+
+This seems to suggest that the state of the board has to be shared with all the pieces, if they are to enforce their own rules of movement.  I'm not really happy with this, so I'd welcome any alternative suggestions 
