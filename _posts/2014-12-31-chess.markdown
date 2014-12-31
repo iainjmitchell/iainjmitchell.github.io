@@ -10,11 +10,8 @@ Over the last few days I've been attempting to discover the objects and interact
 * Pawn
 * Square
 * Piece
-* Check
 * Board
-* Player
 * Game
-* King
 * Move
 
 Using these I've run a couple of [CRC card](http://en.wikipedia.org/wiki/Class-responsibility-collaboration_card) sessions to try and work out the objects, their responsibilities and interactions.  I'm trying to model the game in a strict Object Orientated fashion, by protecting object state by following the principle of [Tell Don't Ask](https://pragprog.com/articles/tell-dont-ask).
