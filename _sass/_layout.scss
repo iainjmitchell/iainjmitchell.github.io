@@ -86,6 +86,7 @@
     border-top: 1px solid $grey-color-light;
     padding: 20px 0;
     background-color: $footer-color;
+    color: $footer-text-color;
     a {
         color: $footer-text-color;
         &:hover {
@@ -102,6 +103,7 @@
     }
     ul {
         margin-bottom: 0px;
+        list-style: none;
     }
     .right {
         float: right;
@@ -124,7 +126,6 @@
 
 .footer-col-wrapper {
     font-size: 15px;
-    color: $grey-color;
     @extend %clearfix;
 }
 
@@ -232,6 +233,12 @@
 
 .post-content {
     margin-bottom: $spacing-unit;
+}
+
+.avatar{
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 }
 
 
