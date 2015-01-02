@@ -2,6 +2,9 @@
     min-height: 56px;
     // Positioning context for the mobile navigation icon
     position: relative;
+    .j {
+        color: $footer-color;
+    }
 }
 
 .site-title {
@@ -174,7 +177,7 @@
     min-height: 600px;
 }
 
-.post {
+.post, .project {
     padding: $spacing-unit/2 0;
     border-bottom: 1px solid #e6eaed;
     header {
@@ -239,6 +242,25 @@
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+}
+
+.profile {
+    padding: $spacing-unit;
+    div {
+        display: inline-block;
+    }
+    .picture {
+        padding: 30px;
+        float: left;
+        img {
+            height: 100px;
+            vertical-align: inherit;
+            box-shadow: 5px 5px 5px $footer-color;
+        }
+    }
+    section {
+        padding: 0 $spacing-unit
+    }
 }
 
 
