@@ -84,7 +84,31 @@
  */
 .site-footer {
     border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+    padding: 20px 0;
+    background-color: $footer-color;
+    a {
+        color: $footer-text-color;
+        &:hover {
+            color: #101010;
+        }
+    }
+    svg {
+        width: 18px;
+        height: 15px;
+
+        path {
+            fill: $footer-text-color;
+        }
+    }
+    ul {
+        margin-bottom: 0px;
+    }
+    .right {
+        float: right;
+    }
+    .left {
+        float: left;
+    }
 }
 
 .footer-heading {
@@ -101,7 +125,6 @@
 .footer-col-wrapper {
     font-size: 15px;
     color: $grey-color;
-    margin-left: -$spacing-unit / 2;
     @extend %clearfix;
 }
 
@@ -144,6 +167,10 @@
 
 .page-heading {
     font-size: 20px;
+}
+
+.page-content {
+    min-height: 500px;
 }
 
 .post {

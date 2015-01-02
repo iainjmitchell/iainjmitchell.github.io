@@ -2,15 +2,13 @@
 
   <div class="wrapper">
     <div class="footer-col-wrapper">
-      <div class="footer-col  footer-col-1">
+      <div class="left">
         <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>  
         </ul>
       </div>
-
-      <div class="footer-col  footer-col-2">
-        <ul class="social-media-list">
+      <div class="right">
+        <ul>
           {% if site.github_username %}
           <li>
             <a href="https://github.com/{{ site.github_username }}">
@@ -24,7 +22,6 @@
             </a>
           </li>
           {% endif %}
-
           {% if site.twitter_username %}
           <li>
             <a href="https://twitter.com/{{ site.twitter_username }}">
