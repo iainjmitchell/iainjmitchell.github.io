@@ -263,4 +263,16 @@
     }
 }
 
+.companies {
+    list-style: none;
+    li {
+        padding: 10px;
+        text-align: center;
+    }
+    img {
+        max-height: 100px;
+        max-width: 300px;
+    }
+}
+
 
