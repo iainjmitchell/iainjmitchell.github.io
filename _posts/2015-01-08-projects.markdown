@@ -43,7 +43,7 @@ I've often heard people blame clients for enforcing a project based approach, bu
 
 If this is out of reach, a first step could be to ensure that all work coming into the team is independently testable and releasable.  This is following the principle of Continuous Delivery, this states that you should always be in a position to release to live - even if the client doesn't want to (not to be confused with Continuous Deployment which is constantly releasing changes to live).  It will also hopefully help get the client and other people within the organisation to start seeing that small incremental changes are possible.
 
-As for the accountancy benefits of running software changes through projects, I have to admit I am no expect in this area, though I do wonder whether vague projects could be established (e.g. website quarter 3 work) that all the work through this period could be attached to. 
+As for the accountancy benefits of running software changes through projects, I have to admit I am no expert in this area, though I do wonder whether vague projects could be established (e.g. website quarter 3 work) that all the work through this period could be attached to. 
 
  
 
