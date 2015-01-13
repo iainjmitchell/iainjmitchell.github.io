@@ -87,32 +87,34 @@
  */
 .site-footer {
     border-top: 1px solid $grey-color-light;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
     background-color: $footer-color;
     color: $footer-text-color;
     a {
-        color: $footer-text-color;
-        &:hover {
-            color: #101010;
-        }
+        margin-left: $spacing-unit;
     }
     svg {
-        width: 18px;
-        height: 15px;
-
+        width: 30px;
+        height: 30px;
         path {
             fill: $footer-text-color;
+            &:hover {
+                fill: #101010;
+            }
         }
     }
-    ul {
-        margin-bottom: 0px;
-        list-style: none;
+    .social {
+        text-align: center;
     }
-    .right {
-        float: right;
-    }
-    .left {
-        float: left;
+    .copyright { 
+        font-style: italic;
+        font-size: 0.8em;
+        padding-top: 3px;
+        text-align: right;
+        @include media-query($on-laptop){
+            text-align: center;
+            padding-top: 15px;
+        }
     }
 }
 
