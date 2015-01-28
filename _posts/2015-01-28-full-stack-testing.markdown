@@ -7,8 +7,9 @@ categories: nodejs, gulp
 
 For the latest site I've been working on, I wanted to write a couple of full stack tests using the headless browser [zombie](http://zombie.labnotes.org/).  I also wanted to automate the running of these tests using the task runner [gulp](http://gulpjs.com/).
 
->> N.B. If you want to try any of the following examples, you'll need the following packages from NPM:
-```shell
+> N.B. If you want to try any of the following examples, you'll need the following packages from NPM:
+
+>```sh
 npm install zombie --save-dev
 npm install gulp --save-dev
 npm install gulp-mocha --save-dev
@@ -76,7 +77,7 @@ Once the website is started the **gulp.src()** function is used to load the test
 
 Next in the pipeline is the mocha object from **gulp-mocha**, this will execute mocha on each of the test files piped to it.  I'm using the nyan cat reporter for mocha because for some reason I still find an ASCII rendering of a nyan cat amusing.
 
-```shell
+```sh
 1   -__,------, 
 0   -__|  /\_/\  
 0   -_~|_( ^ .^) 
@@ -87,6 +88,6 @@ The final part of the gulp task is to ensure that the website is stopped at the 
 
 Now we should be able to execute our full stack tests by running the following in the shell:
 
-```shell
+```sh
 	gulp scenarios
 ```
