@@ -44,7 +44,7 @@ In the **before()** function of the Mocha test I instruct the browser to visit t
 
 So, that's the test written, we just have to automate the running of this via gulp.  The problem with automating full-stack tests through a task runner is that you need to ensure the website is running locally before the tests are run.  We also need to tear down the website after the tests have been run.
 
-Therefore our full-stack work flow is like this:
+Therefore our full-stack testing work flow is like this:
 
 1.  Start website
 2.  Run tests
