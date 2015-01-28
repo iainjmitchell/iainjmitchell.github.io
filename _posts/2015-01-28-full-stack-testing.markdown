@@ -5,7 +5,7 @@ date:   2015-01-28 16:39:51
 categories: nodejs, gulp
 ---
 
-For the latest site I've been working on, I wanted to write a couple of full stack tests using the headless browser [zombie](http://zombie.labnotes.org/).  I also wanted to automate the running of these tests using the task runner [gulp](http://gulpjs.com/).
+For the latest nodejs website I've been working on, I wanted to write a couple of full stack tests using the headless browser [zombie](http://zombie.labnotes.org/).  I also wanted to automate the running of these tests using the task runner [gulp](http://gulpjs.com/).
 
 > N.B. If you want to try any of the following examples, you'll need the following packages from NPM:
 
