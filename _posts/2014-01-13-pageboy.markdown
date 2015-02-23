@@ -3,6 +3,7 @@ layout: post
 title:  "Introducing Pageboy.js"
 date:   2014-01-13 11:20
 categories: Javascript, TDD
+description: An introduction to Pageboy.js, a Javascript testing helper for DOM interaction
 ---
 
 Recently, I was explaining how to Test Drive Javascript with DOM interaction and one of the audience mentioned that they found the tests unreadable. The tests had been written in [qunit](http://qunitjs.com/) and used [jQuery](http://jquery.com/) to interact with the test fixture in the DOM, here is a similar example:

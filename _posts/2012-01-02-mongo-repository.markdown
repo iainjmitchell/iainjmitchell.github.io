@@ -3,6 +3,7 @@ layout: post
 title:  "Implementing the Repository pattern with MongoDB and coffeescript/nodejs"
 date:   2012-01-02 14:24
 categories: Coffeescript, DDD, MongoDB, nodejs
+description: How to implement the Repository pattern in nodejs against a MongoDB Nosql datastore. 
 ---
 
 The [Repository Pattern](http://martinfowler.com/eaaCatalog/repository.html) is a useful mechanism to abstract the mechanics of the data store away from the business logic. There are various ways of implementing a repository against a relational database, the mechanics could use plain old SQL or something more exotic like nHibernate or Entity Framework.

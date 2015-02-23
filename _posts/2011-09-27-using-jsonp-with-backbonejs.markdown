@@ -3,6 +3,7 @@ layout: post
 title:  "Using JSONP with Backbone JS"
 date:   2011-09-27 11:00
 categories: backbone.js, javascript, JSON
+description: Working with JSONP cross-origin requests in Backbone.js.
 ---
 [JSON with Padding (JSONP)](http://en.wikipedia.org/wiki/JSONP) is a mechanism to support the retrieval of data from a server in a different domain.  This is achieved by exploiting the fact that the HTML &lt;script&gt; element can be retrieved from an external domain.  
 

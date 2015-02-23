@@ -3,6 +3,7 @@ layout: post
 title:  "4 Tips on WCF JSON serialisation"
 date:   2010-10-01 12:24
 categories: .NET, WCF, JSON
+description: Tips on serialising to JSON through WCF.
 ---
 # 1. Excluding null fields from serialisation
 

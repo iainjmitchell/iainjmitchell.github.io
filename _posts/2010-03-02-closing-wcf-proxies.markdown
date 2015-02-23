@@ -3,6 +3,7 @@ layout: post
 title:  "Closing WCF Proxies / Channels"
 date:   2010-03-02 13:15
 categories: .NET, WCF
+description: The importance of closing WCF proxies / Channels.
 ---
 The purpose of this post is to discuss the best way of closing Windows Communication Foundation (WCF) proxies/channels.  Whether you are using a system generate proxy, or an interface initialised through a channel factory* it is inevitable that at some point you will need to close this.
 

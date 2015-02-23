@@ -3,6 +3,7 @@ layout: post
 title:  "Constructor Function v Prototype in Javascript"
 date:   2013-01-31 10:15
 categories: Javascript, OO
+description: Looking at the difference between two mechanisms of creating objects in Javascript, Constructor Function and Prototype.
 ---
 There are two main mechanisms for creating objects in Javascript, these are known as **Constructor Function** and **Prototype**.  In this post I will run through an example of each and explain my preference.
 

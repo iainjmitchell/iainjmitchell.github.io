@@ -3,6 +3,7 @@ layout: post
 title:  "Isomorphism"
 date:   2014-12-15 19:49:51
 categories: Refactoring
+description: The relationship between isomorphism and naming in software.
 ---
 
 Recently I've been reading a fascinating book by Douglas Hofstadter called [Gödel, Escher, Bach](http://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach).  In an early chapter he introduces the concept of *Formal Systems*, which is any system of abstract thought based upon the model of mathematics. 

@@ -3,6 +3,7 @@ layout: post
 title:  "8 visualisation improvements for Kanban/Scrum boards"
 date:   2013-09-01 16:48
 categories: Kanban, SCRUM
+description: 8 tips to help improve visualisation on a Kanban or Scrum board.
 ---
 
 A physical [Kanban](http://en.wikipedia.org/wiki/Kanban_(development)) or [Scrum](http://en.wikipedia.org/wiki/Scrum_(software_development)) board is usually one of the first steps that software development teams take when they set sail on an **Agile** course. The intention of these boards is to visualise the state of the current deliverable(s), so that all members of the team and the customer should be able to understand what is happening. This may act as a conversation starter or even help pre-empt delays in delivery.

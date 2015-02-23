@@ -3,6 +3,7 @@ layout: post
 title:  "Dunning-Kruger Effect in Software Development"
 date:   2015-02-23 12:39:51
 categories: management, agile
+description: Looking at the signs of the Dunning-Kruger Effect in software development teams 
 ---
 In 1999 a paper by Justin Kruger and David Dunning of Cornell University appeared in the **Journal of Personality and Social Psychology**, this piece summarised research that they had been carried out into the difference between peoples perceived and actual ability in a subject.
 

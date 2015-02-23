@@ -3,6 +3,7 @@ layout: post
 title:  "Chess"
 date:   2014-12-31 13:00:51
 categories: CRC, OO
+description: CRC card thought experiment into the rules of chess.
 ---
 
 Over the last few days I've been attempting to discover the objects and interactions for the game of chess.  After writing down the basic rules of pawns I identified the following candidate objects, using noun analysis:

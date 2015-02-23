@@ -3,6 +3,7 @@ layout: post
 title:  "Implementing the Specification Pattern in .NET"
 date:   2011-04-15 08:43
 categories: .NET, Design Patterns
+description: How to implement the specification pattern in .NET.
 ---
 
 Recently I have been reading Eric Evans excellent book on [Domain Driven Design](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215).  One of the patterns discussed in this book is the **Specification Pattern**, which was conceived by Eric Evans and Martin Fowler (see [here](http://www.martinfowler.com/apsupp/spec.pdf) for full description).

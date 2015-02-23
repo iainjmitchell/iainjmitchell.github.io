@@ -3,6 +3,7 @@ layout: post
 title:  "AddressFilterMode in WCF"
 date:   2011-11-21 11:37
 categories: .NET, WCF, XML
+description: An explanation of AddressFilterMode in WCF. 
 ---
 Recently, I have been implementing a POX (plain ol’ XML) WCF service that needed to route all requests through a single ‘handler’ operation contract. The routing to this single operation was easily implemented by adding a wildcard action to the operation contract:
 

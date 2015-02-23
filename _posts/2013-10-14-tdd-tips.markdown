@@ -3,6 +3,7 @@ layout: post
 title:  "8 Test Driven Development tips"
 date:   2013-10-14 14:00
 categories: TDD, Refactoring
+description: 8 tips to help get better at Test Driven Development (TDD).
 ---
 **1. Have a failing test** – The red stage is the first of the TDD cycle, it is complete when only one test is failing AND the test is failing on the expected assertion.  Seeing the test fail is an important validation of the criteria of the test, so avoid temptation to leap into the implementation without running the tests.
 

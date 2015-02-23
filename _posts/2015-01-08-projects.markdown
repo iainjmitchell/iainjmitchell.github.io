@@ -3,6 +3,7 @@ layout: post
 title:  "Projects"
 date:   2015-01-08 10:39:51
 categories: agile, lean
+description: The effects that a project mentality has upon teams that are trying to be agile in developing software.
 ---
 
 > In contemporary business and science a **project** is defined as a collaborative enterprise, involving research or design, that is **carefully planned** to achieve a particular aim.

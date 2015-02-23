@@ -3,6 +3,7 @@ layout: post
 title:  "Full stack testing with gulp & zombie"
 date:   2015-01-28 16:39:51
 categories: nodejs, gulp
+description: How to automate the running of zombie tests using gulp
 ---
 
 For the latest nodejs website I've been working on, I wanted to write a couple of full stack tests using the headless browser [zombie](http://zombie.labnotes.org/).  I also wanted to automate the running of these tests using the task runner [gulp](http://gulpjs.com/).

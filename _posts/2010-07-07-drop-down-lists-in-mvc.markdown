@@ -3,6 +3,7 @@ layout: post
 title:  "Drop Down Lists in ASP.NET MVC 2"
 date:   2010-07-07 13:09
 categories: .NET, ASP.NET MVC
+description: Working with Drop Down Lists in ASP.NET MVC 2.
 ---
 
 A problem that I have come across recently is, how do you handle drop down lists in MVC? There is a dual function of the MVC model as it has to:

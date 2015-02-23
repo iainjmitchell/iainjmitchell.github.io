@@ -3,6 +3,7 @@ layout: post
 title:  "Getting JQuery and WCF to talk (part one of two)"
 date:   2010-01-18 20:19
 categories: jQuery, WCF, AJAX
+description: Getting jQuery to talk to WCF (one of two).
 ---
 
 # Introduction

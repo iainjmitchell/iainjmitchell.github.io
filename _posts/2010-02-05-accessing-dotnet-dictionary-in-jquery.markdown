@@ -3,6 +3,7 @@ layout: post
 title:  "Accessing a .NET Dictionary in jQuery"
 date:   2010-02-05 08:04
 categories: .NET, jQuery
+description: Accessing a .NET dictionary that has been serialised to JSON in jQuery.
 ---
 Recently I noticed that the **DataContractJsonSerializer** does something peculiar with the .NET Dictionary type when serialising it to JSON. I assumed, wrongly, that it would be converted to an [associative array](http://www.pageresource.com/jscript/jarray2.htm) with the dictionary item **key** as the associative and the dictionary item **value** as object in the array. For example, the following dictionary in C#….
 

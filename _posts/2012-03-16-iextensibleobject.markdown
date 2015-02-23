@@ -3,6 +3,7 @@ layout: post
 title:  "Extending classes with IExtensibleObject"
 date:   2012-03-16 13:16
 categories: .NET, WCF
+description: An explanation of IExtensibleObject interface in .NET and it's use in WCF. 
 ---
 
 # Introduction

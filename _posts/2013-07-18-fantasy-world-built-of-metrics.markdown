@@ -3,6 +3,7 @@ layout: post
 title:  "Fantasy world built of metrics?"
 date:   2013-07-18 09:24
 categories: Agile, Kanban, Lean
+description: Can we rely upon metrics in Software Development?
 ---
 Last weekend I went to see the [Adam Curtis and Massive Attack](http://www.bbc.co.uk/blogs/adamcurtis/posts/MASSIVE-ATTACK-V-ADAM-CURTIS) event, which was part of the **Manchester International Festival**. This was an audio/visual film (or Glim – Gig integrating with a film) about the fake enchanting modern world which we live in today.
 

@@ -3,6 +3,7 @@ layout: post
 title:  "Exposing functions on jQuery plugins"
 date:   2010-08-26 08:19
 categories: jQuery
+description: A technique for exposing public functions on jQuery plugins.
 ---
 # Introduction
 
