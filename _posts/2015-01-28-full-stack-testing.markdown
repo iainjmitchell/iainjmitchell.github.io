@@ -5,7 +5,7 @@ date:   2015-01-28 16:39:51
 categories: nodejs, gulp
 ---
 
-For the latest site I've been working on, I wanted to write a couple of full stack tests using the headless browser [zombie](http://zombie.labnotes.org/).  I also wanted to automate the running of these tests using the task runner [gulp](http://gulpjs.com/).
+For the latest nodejs website I've been working on, I wanted to write a couple of full stack tests using the headless browser [zombie](http://zombie.labnotes.org/).  I also wanted to automate the running of these tests using the task runner [gulp](http://gulpjs.com/).
 
 > N.B. If you want to try any of the following examples, you'll need the following packages from NPM:
 
@@ -44,7 +44,7 @@ In the **before()** function of the Mocha test I instruct the browser to visit t
 
 So, that's the test written, we just have to automate the running of this via gulp.  The problem with automating full-stack tests through a task runner is that you need to ensure the website is running locally before the tests are run.  We also need to tear down the website after the tests have been run.
 
-Therefore our full-stack work flow is like this:
+Therefore our full-stack testing work flow is like this:
 
 1.  Start website
 2.  Run tests
