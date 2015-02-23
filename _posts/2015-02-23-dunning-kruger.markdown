@@ -24,7 +24,7 @@ The third study of the paper focused upon recording perceived and actual test sc
 
 This graph suggests that people who have less knowledge of a subject actual think they know more than some of those more informed. Quite simply put, they are too unskilled to be aware of it, and this is what is known as the **Dunning-Kruger Effect**.
 
-So, how does this fit in with Software Development?  I've seen the Dunning-Kruger Effect play out in following three ways:  
+So, how does this fit in with Software Development?  I've seen the **Dunning-Kruger Effect** play out in following three ways:  
 
 ##1. Inexperienced Developers
 
@@ -42,7 +42,7 @@ Impostor Syndrome can also cause people to overwork, so that they avoid being de
 
 ##3. Unknowledgeable Non-Technical Team Members
 
-In Ben Goldacre's excellent book [Bad Science](http://en.wikipedia.org/wiki/Bad_Science_%28book%29) he claims that the media's flawed coverage of the MMR vaccine scare was a result of journalists falling prey to the Dunning-Kruger effect. They did not understand anything about medical research and statistics to recognise that the study that suggested the link between autism and the vaccine was laughably weak.
+In Ben Goldacre's excellent book [Bad Science](http://en.wikipedia.org/wiki/Bad_Science_%28book%29) he claims that the media's flawed coverage of the MMR vaccine scare was a result of journalists falling prey to the **Dunning-Kruger Effect**. They did not understand anything about medical research and statistics to recognise that the study that suggested the link between autism and the vaccine was laughably weak.
 
 There is also a similar problem with non-technical team members, which can be particularly troublesome if they have client contact.  In one case I have seen a Project Manager was discussing everything from **divs** to **merging strategies** with the client. They then took the results of the discussion and presented it to the development team as tasks.  Unsurprisingly poor decisions had been made and the solution failed to meet the client goal.
 
