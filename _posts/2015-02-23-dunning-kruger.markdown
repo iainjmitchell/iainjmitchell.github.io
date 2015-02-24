@@ -47,7 +47,7 @@ In Ben Goldacre's excellent book [Bad Science](http://en.wikipedia.org/wiki/Bad_
 
 There is also a similar problem with non-technical team members, which can be particularly troublesome if they have client contact.  In one case I have seen a Project Manager was discussing everything from **divs** to **merging strategies** with the client. They then took the results of the discussion and presented it to the development team as tasks.  Unsurprisingly poor decisions had been made and the solution failed to meet the client goal.
 
-As developers we can contribute to this by engaging in sudo-technical conversations with non-technical team members.  If you keep using branches and html elements in conversation people will pick up this terminology and use it.  This will start to empower them to make ill-informed technical decisions which will lead to a culture of technical tasks rather than problem solving.
+As developers we can contribute to this by engaging in pseudo-technical conversations with non-technical team members.  If you keep using branches and html elements in conversation people will pick up this terminology and use it.  This will start to empower them to make ill-informed technical decisions which will lead to a culture of technical tasks rather than problem solving.
 
 ---
 Dunning and Kuger's full paper can be read here: 
