@@ -11,6 +11,6 @@ permalink: /blog/:title
 exclude: ["gems"]
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
 gems:
   - jekyll-redirect-from
