@@ -27,7 +27,7 @@ This graph suggests that people who have less knowledge of a subject actual thin
 
 So, how does this fit in with Software Development?  I've seen the **Dunning-Kruger Effect** play out in following three ways:  
 
-##1. Inexperienced Developers
+## 1. Inexperienced Developers
 
 We've all been there, looking back I feel sorry for the developers who had to work with me in my first few years in the industry!
 
@@ -35,13 +35,13 @@ This only becomes a problem for the developer in question if they decide that th
 
 It is also important that inexperienced developers should get to work day to day with more experienced colleagues, ideally through pairing.  This will help rapidly improve their knowledge and appreciate what they don't know.  
 
-##2. Impostor syndrome
+## 2. Impostor syndrome
 
 More experienced developers can suffer from [Impostor Syndrome](http://en.wikipedia.org/wiki/Impostor_syndrome) which gives them the impression that they know less than they do. Mixed with confident vocal inexperienced developers this may result in poor decisions being made.
 
 Impostor Syndrome can also cause people to overwork, so that they avoid being detected as an impostor.  This can lead to burn-out which is a serious problem in the IT industry. 
 
-##3. Unknowledgeable Non-Technical Team Members
+## 3. Unknowledgeable Non-Technical Team Members
 
 In Ben Goldacre's excellent book [Bad Science](http://en.wikipedia.org/wiki/Bad_Science_%28book%29) he claims that the media's flawed coverage of the MMR vaccine scare was a result of journalists falling prey to the **Dunning-Kruger Effect**. They did not understand anything about medical research and statistics to recognise that the study that suggested the link between autism and the vaccine was laughably weak.
 
