@@ -25,3 +25,4 @@ This understanding of transience can also be applied to our code.  We often writ
 
 Accepting the codes impermanence will also help us to be less precious about changes that others make to code that we have worked on.  In both commercial teams and open source projects we see examples of individuals who re-write, rollback and change others commits. As engineers we should be prepared to let others shape the code to their world view.  Even if it means losing code that we have been proud of.  Thanks to version control you can always go back and revisit it - like a photo of the sakura.
 
+![Sakura](/images/sakura.jpg)
