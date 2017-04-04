@@ -15,4 +15,11 @@ The annual Sakura (Cherry blossom) in Japan is a good example of mono no aware. 
 
 So why am I writing about **mono no aware** in my software blog?
 
-After reading about this term I looked at my day-to-day life through the lenses of **mono no aware** and realised that it could be applied to software engineering. 
+After reading about this term I looked at my day-to-day life through the lenses of **mono no aware** and realised this philosophy could be  applied to software engineering. 
+
+We should think about the products we build as impermanent.  Often we go into building new products with a sense that they will be serving their purpose for many years to come, happly ticking along.  But we know this is not the norm, most products have a lifecycle of mere years.  So perhaps we should build our products for the here and now and resist the temptation to future proof and crystal ball.
+
+If we accept that our products are impermanent, then this will lead to a fleeting awareness our users will have of our products.  This highlights the importance of releasing early to ensure they see the beauty of the products for as long as possible.
+
+This understanding of transience can also be applied to our code.  We often write tests to help 
+
