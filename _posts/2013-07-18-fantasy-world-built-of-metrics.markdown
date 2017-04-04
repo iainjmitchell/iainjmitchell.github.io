@@ -9,7 +9,7 @@ Last weekend I went to see the [Adam Curtis and Massive Attack](http://www.bbc.c
 
 One of the ideas that grabbed my attention was that much of the modern world is built on numbers (or metrics), this ranges from financial planning/investments through to behaviour of political parties. The flaw in this idea is that metrics are always based upon the past actions and not the future, which leads to a future-phobic outlook and ‘safe’ decision making.
 
-It was also mentioned that usage of metrics can also build up a fantasy world that bares no resemblance to reality, for example the financial metrics that allowed companies such Eron and Lehman Brothers to appear strong and competent.
+It was also mentioned that usage of metrics can also build up a fantasy world that bares no resemblance to reality, for example the financial metrics that allowed companies such Enron and Lehman Brothers to appear strong and competent.
 
 This got me thinking about the lean/agile reliance upon metric driven development, is it possible that the more we engage in metric driven development, the more we are also entering our own fantasy world?
 
