@@ -16,12 +16,12 @@ description: The effects that a project mentality has upon teams that are trying
 
 
 
-#What is the difference between BAU and project development work?
+# What is the difference between BAU and project development work?
 They both involve changes to the software, maybe to a database, hopefully they are tested and then they are released out in the wild.  Except usually the project work is not released out into the wild, it sits there waiting for the rest of the project to be finished or it is released [feature switched](http://en.wikipedia.org/wiki/Feature_toggle) off.
 
 Sometimes project development work cannot be released because it is non-releasable, for example a 'front-end' ticket that also requires the 'back-end' ticket to be completed before releasing.
 
-#What is the difference between BAU and projects from a client perspective?
+# What is the difference between BAU and projects from a client perspective?
 BAU is a small change, perhaps based upon a metric or upcoming promotion that can potentially have immediate return on investment.
 Projects are usually a big sweeping change, more likely to be based upon hunches and opinions of individuals.  These maybe correct, but they cannot be measured until the end of the project. 
 
@@ -32,14 +32,14 @@ Projects need more management, from providing costs to tracking progress and ris
 
 Because of the extra management, the costs of project will be much higher.  Due to the size and increased risk they are also likely to be more inefficient.  Some companies will even pass some of this cost back to clients as a management charge. 
 
-#So why do we have projects?
+# So why do we have projects?
 Some non-technical people still have a house-building notion of software development.  They think that they have to build the entire extension, not realising that we could just put up a sign first to see if anyone actually wants an extension.
 
 Unfortunately, projects are also championed from an accountancy point of view as the cost of a software project can be depreciated over a four year period.  This means the investment they made into the project can be spread over this period, which can be beneficial from a tax point of view.
 
 There are also some cases where a project is appropriate, for example a piece of work that requires changes by multiple teams perhaps including non-software changes (e.g. hardware).
 
-#How do we get away from projects?
+# How do we get away from projects?
 I've often heard people blame clients for enforcing a project based approach, but I have also witnessed sales representatives set expectations for the style of working in early negotiations.  This suggests to truly get away from projects, it requires full organisational change. 
 
 If this is out of reach, a first step could be to ensure that all work coming into the team is independently testable and releasable.  This is following the principle of Continuous Delivery, this states that you should always be in a position to release to live - even if the client doesn't want to (not to be confused with Continuous Deployment which is constantly releasing changes to live).  It will also hopefully help get the client and other people within the organisation to start seeing that small incremental changes are possible.
