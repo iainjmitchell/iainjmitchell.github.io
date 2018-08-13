@@ -29,7 +29,7 @@ public class ATeamModel
 {
   public IEnumerable Members {get; set;}
 
-  [DisplayName("Pick your favorite A-Team member")]
+  [DisplayName("Pick your favourite A-Team member")]
   public string SelectedActor {get; set;}
 }
 ```
@@ -54,7 +54,7 @@ public class ATeamController
    }
 
    [HttpPost]
-   public ActionResult Favorite(ATeamModel model)
+   public ActionResult Favourite(ATeamModel model)
    {
        if (model.SelectedActor == "Mr T")
        {

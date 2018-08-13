@@ -1,0 +1,42 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "iainjmitchell.com DNS",
+  "Resources": {
+    "hostedzone": {
+      "Type": "AWS::Route53::HostedZone",
+      "Properties": {
+        "Name": "iainjmitchell.com."
+      }
+    },
+    "dnsiainjmitchell": {
+      "Type": "AWS::Route53::RecordSetGroup",
+      "Properties": {
+        "HostedZoneName": "iainjmitchell.com.",
+        "RecordSets": [
+          {
+            "Name": "iainjmitchell.com.",
+            "Type": "A",
+            "TTL": "1800",
+            "ResourceRecords" : ["185.199.108.153", "185.199.109.153", "185.199.110.153", "185.199.111.153"]
+          }
+        ]
+      },
+      "DependsOn" : "hostedzone"
+    },
+    "dnswwwiainjmitchell": {
+      "Type": "AWS::Route53::RecordSetGroup",
+      "Properties": {
+        "HostedZoneName": "iainjmitchell.com.",
+        "RecordSets": [
+          {
+            "Name": "www.iainjmitchell.com.",
+            "Type": "CNAME",
+            "TTL": "1800",
+            "ResourceRecords": ["iainjmitchell.github.io"]
+          }
+        ]
+      },
+      "DependsOn" : "hostedzone"
+    }
+  }
+}
