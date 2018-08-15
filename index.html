@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <div class="home">
   <section>
     <h1 class="page-heading">Recent blog posts</h1>
@@ -9,7 +8,6 @@ layout: default
       {% for post in site.posts limit:5 %}
         <li>
           <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
-
           <span>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </span>
@@ -17,7 +15,4 @@ layout: default
       {% endfor %}
     </ul>
   </section>
-
-  
-
 </div>

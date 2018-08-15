@@ -1,9 +1,4 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
 @charset "utf-8";
-
-
 
 // Our variables
 $base-font-family: 'Varela Round', Arial, sans-serif;
@@ -28,7 +23,6 @@ $on-laptop:        800px;
 
 $footer-color: 	#828282;
 $footer-text-color: #FFFFFF;
-
 
 
 // Using media queries with like this:
