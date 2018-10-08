@@ -14,3 +14,5 @@ exclude: ["gems"]
 markdown: kramdown
 gems:
   - jekyll-redirect-from
+sass:
+    style: compressed
