@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  "Dysfunctions of Multi-Discipline Teams"
-date:   2017-04-04 12:39:51
+date:   2018-12-04 14:39:51
 categories: agile, lean, management
 description: Avoiding the pitfalls of a multi-discipline team
 ---
 
 Way back in the summer of 2001 I started my first role as a Software Engineer.  This role had a wide range of responsibilities that included gathering requirements, designing the User Interface and producing quality code to meet the user needs. We also had to design our own windows program icons, which resulted in some very peculiar works of miniature art!
+
 One of the downside of this job is that, although we were organised into teams, we worked alone.  The teams were just amalgamations of individuals brought together to share common line management.
 
 Fortunately, the industry has moved towards a more collaborative approach to building software, with many teams now working together to solve problems.  But this has also resulted in a wide range of additional roles becoming common within the workplace.  Some of these roles are specialisations of activities that may have been performed by Software Engineers (e.g. Business Analysis, Testers). Other roles have appeared due to advances within the industry, Data Scientists and User Experience (UX) are examples of this.
