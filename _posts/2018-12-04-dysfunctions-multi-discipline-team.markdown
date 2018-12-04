@@ -2,7 +2,7 @@
 layout: post
 title:  "Dysfunctions of Multi-Discipline Teams"
 date:   2017-04-04 12:39:51
-categories: agile, lean
+categories: agile, lean, management
 description: Avoiding the pitfalls of a multi-discipline team
 ---
 
