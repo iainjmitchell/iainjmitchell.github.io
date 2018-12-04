@@ -2,3 +2,4 @@ _site
 gems
 .bundle
 .DS_store
+.sass-cache
