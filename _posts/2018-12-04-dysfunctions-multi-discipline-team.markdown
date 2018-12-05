@@ -6,7 +6,7 @@ categories: agile, lean, management
 description: Avoiding the pitfalls of a multi-discipline team
 ---
 
-Way back in the summer of 2001 I started my first role as a Software Engineer.  This role had a wide range of responsibilities that included gathering requirements, designing the User Interface and producing quality code to meet the user needs. We also had to design our own windows program icons, which resulted in some very peculiar works of miniature art!
+Back in the summer of 2001 I started my first role as a Software Engineer.  This role had a wide range of responsibilities that included gathering requirements, designing the User Interface and producing quality code to meet the user needs. We also had to design our own windows program icons, which resulted in some very peculiar works of miniature art!
 
 One of the downside of this job is that, although we were organised into teams, we worked alone.  The teams were just amalgamations of individuals brought together to share common line management.
 
