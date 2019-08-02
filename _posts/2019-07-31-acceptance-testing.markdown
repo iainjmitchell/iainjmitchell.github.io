@@ -8,7 +8,8 @@ description: Thoughts on current state of acceptance testing
 
 Last week I had the following DM on Twitter from [@rahabm](https://twitter.com/rahabm) about the current state of Acceptance Testing
 
->>> Hi Iain. I remember that testing used to be taken serious back in the UK. What is the current state on Acceptance Testing these days ? What are your thoughts on who should write and implement an acceptance test ? 😀
+> Hi Iain. I remember that testing used to be taken serious back in the UK. What is the current state on Acceptance Testing these days ? What are your thoughts on who should write and implement an acceptance test ? 😀
+
 I commented at the end of my rant back to @rahabm that I should probably write a blog post about this, so here it is!
 
 To begin with, what do we mean by **Acceptance Test**?  If we use [Mike Cohn's Testing Pyramid](https://martinfowler.com/bliki/TestPyramid.html) we are referring to the User Interface or system boundary test, which is the very top of the pyramid.  For a website this would be a form of browser automation with code performing the clicks and inputting normally performed by humans.
