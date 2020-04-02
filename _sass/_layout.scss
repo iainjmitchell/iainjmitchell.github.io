@@ -180,6 +180,37 @@
     padding: 40px 0;
 }
 
+.home {
+    .home__post {
+        padding: $spacing-unit 0;
+        border-bottom: 1px solid #e6eaed;
+        header {
+            h2, a {
+                line-height: 1.2;
+                color: $text-color;
+                &:hover {
+                    color: $grey-color;
+                }
+                font-size: 1.5em;
+                display: block;
+                margin-bottom: 0px;
+            }
+        }
+        .home__post__meta {
+            font-size: $small-font-size;
+
+            color: $grey-color;
+        }
+        .home__post__except {
+           padding-top: 10px; 
+        }
+        .home__post__read {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+}
+
 .post, .project {
     padding: $spacing-unit/2 0;
     border-bottom: 1px solid #e6eaed;
@@ -187,10 +218,7 @@
         h2, a {
             line-height: 1.2;
             color: $text-color;
-            &:hover {
-                color: $grey-color;
-            }
-            font-size: 27px;
+            font-size: 2.5em;
             display: block;
             margin-bottom: 0px;
         }

@@ -5,18 +5,18 @@ permalink: /blog/
 ---
 <div class="home">
 	{% for post in site.posts %}
-	  <article class="post">
+	  <article class="home__post">
 	  	<header>
 		    <h2>
 		      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 		    </h2>
-		    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} on {{post.categories | join: ' '}}</span> 
+		    <span class="home__post__meta">{{ post.date | date: "%b %-d, %Y" }} on {{post.categories | join: ' '}}</span> 
 	    </header>
-	    <section class="post-except">
-	    	{{ post.content | strip_html | truncatewords:50}}
+	    <section class="home__post__except">
+	    	{{ post.content | strip_html | truncatewords:100}}
 	    </section>
-	    <div class="continue-reading">
-	    	<a href="{{ post.url | prepend: site.baseurl }}">Continue reading >></a>
+	    <div class="home__post__read">
+	    	<a href="{{ post.url | prepend: site.baseurl }}">Continue reading</a>
 		</div>
 	  </article>
 	{% endfor %}

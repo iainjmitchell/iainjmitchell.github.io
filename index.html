@@ -3,16 +3,21 @@ layout: default
 ---
 <div class="home">
   <section>
-    <h1 class="page-heading">Recent blog posts</h1>
-    <ul class="post-list">
-      {% for post in site.posts limit:5 %}
-        <li>
-          <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
-          <span>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </span>
-        </li>
-      {% endfor %}
-    </ul>
+    {% for post in site.posts %}
+	  <article class="home__post">
+	  	<header>
+		    <h2>
+		      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+		    </h2>
+		    <span class="home__post__meta">{{ post.date | date: "%b %-d, %Y" }} on {{post.categories | join: ' '}}</span> 
+	    </header>
+	    <section class="home__post__except">
+	    	{{ post.content | strip_html | truncatewords:100}}
+	    </section>
+	    <div class="home__post__read">
+	    	<a href="{{ post.url | prepend: site.baseurl }}">Continue reading</a>
+		</div>
+	  </article>
+	{% endfor %}
   </section>
 </div>
