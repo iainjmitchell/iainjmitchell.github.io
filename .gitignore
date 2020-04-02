@@ -3,3 +3,4 @@ gems
 .bundle
 .DS_store
 .sass-cache
+.jekyll-cache
