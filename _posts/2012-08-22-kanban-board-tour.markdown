@@ -6,7 +6,7 @@ categories: Kanban, Lean, TOC
 ---
 In this post I’m going to give a quick run through the [Kanban](http://en.wikipedia.org/wiki/Kanban_(development) "Kanban") board that my team uses at [LateRooms.com](http://www.laterooms.com/ "LateRooms.com").  This is not a _‘thou shalt do it this way’_ article, it is intended to demonstrate a working board and explain its structure.  Also, I must stress that this is the _current_ state of the board at the time of this post was written, so it has probably evolved again by now! 
 
-# The board
+## The board
 
 ![Kanban Board](/images/kanban.png)
 

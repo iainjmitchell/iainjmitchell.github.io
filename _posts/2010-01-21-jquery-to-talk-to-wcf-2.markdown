@@ -6,11 +6,11 @@ categories: jQuery, WCF, AJAX
 description: Getting jQuery to talk to WCF (two of two).
 ---
 
-# Introduction
+## Introduction
 
 In my last article I covered how to get **JQuery** to call a **WCF** method.  This included the passing of arguments and the handling of any return values.  In this, the second part, I will cover the final piece of the JQuery / WCF communication jigsaw, the throwing and handling of faults.
 
-# Setting up the ErrorHandler
+## Setting up the ErrorHandler
 
 When any type of FaultException is raised from a web enabled WCF service the default behavior is to throw a HTTP 400 error.  If the **includeExceptionDetailInFaults** service behavior is enabled then a serialized stack trace is also sent across the wire (I strongly advise turning this off before your code goes to deployment).
 
@@ -121,7 +121,7 @@ Once you have a fault message to send out we need to ensure that the message is 
 
 So, now we have our error handler we need to be able to attach this onto our Json WCF service endpoint.  In order to do this we’ll need to write a custom behavior and behavior element.
 
-# Setting up the Custom Behavior
+## Setting up the Custom Behavior
 
 To be able to apply the error handler we need to create a custom **WebHttpBehavior** to insert it into the channel dispatcher associated with our endpoint.  This also has to remove any default behaviors that have been added to the channel dispatcher.
 
@@ -174,7 +174,7 @@ public class JsonErrorWebHttpBehaviorElement : BehaviorExtensionElement
 }
 ```
 
-# Configuring the Json Custom Error Behavior
+## Configuring the Json Custom Error Behavior
 
 Now that we have our custom error handler and custom behavior, we just need to alter our services web.config file to define the custom behavior and associate it with our Json enabled WCF service.
 
@@ -186,7 +186,7 @@ The behavior extensions section includes an entry for our previously defined **J
 
 Our newly defined behavior extension (jsonWebHttp) is included in the  **JsonBehavior** endpoint behavior configuration.  This has already been defined as the behaviorConfiguration for out service “MyApp.MyService”, so our WCF service will now return Json faults.
 
-# The JQuery client side
+## The JQuery client side
 
 Here is the Jquery.Ajax call from the previous article, altered to include the WCF fault handling:
 
@@ -209,7 +209,7 @@ Here is the Jquery.Ajax call from the previous article, altered to include the W
 
 As you can see, the error handling function has been altered to create a jsonFault object from the JSON contained in the responseText property of the message.  I’m using the JSON.parse(string) function of [this](http://json.org/json2.js) JSON library to perform the conversion.  Once we have the object we can access the WCF fault data contract properties on it (this is my outer JsonFault fault class, the .Detail property would contain the specific WCF fault).
 
-# Conclusion
+## Conclusion
 
 In this article I have demostrated how to set up a WCF service to return Json formatted faults and how to catch these in the JQuery Ajax call.
 

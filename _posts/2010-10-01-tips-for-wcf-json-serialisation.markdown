@@ -5,7 +5,7 @@ date:   2010-10-01 12:24
 categories: .NET, WCF, JSON
 description: Tips on serialising to JSON through WCF.
 ---
-# 1. Excluding null fields from serialisation
+## 1. Excluding null fields from serialisation
 
 By default all serialisers in WCF, including the [DataContractJsonSerializer](http://msdn.microsoft.com/en-us/library/system.runtime.serialization.json.datacontractjsonserializer.aspx), will automatically serialise ALL Data Member properties.  So, if your property is not set it will serialise as _null_.  
 
@@ -67,7 +67,7 @@ public class MyContract
 {"PropertyTwo": "aValue"}
 ```
 
-# 2. Renaming properties in the JSON
+## 2. Renaming properties in the JSON
 
 In the .NET world Microsoft naming standards state that public properties of an object have to start with a capital letter.  However, our friends in the Javascript world favour properties that start in lowercase.  Fortunately, we can avoid any potential conflict by the use of the DataMember’s [Name](http://msdn.microsoft.com/en-us/library/system.runtime.serialization.datamemberattribute.name.aspx) attribute. 
 
@@ -92,7 +92,7 @@ public class MyContract
 {"propertyOne": "aValue"}
 ```
 
-# 3. The Enum Serialisation problem
+## 3. The Enum Serialisation problem
 
 By default the WCF Data Contract serialisers will convert Enum values into their numerical representation.  With JSON serialisation it would be more useful if we could return the string value of the Enum as it would make more sense than just a numeric value.
 
@@ -121,7 +121,7 @@ public class MyContract
 
 The property that is serialised into JSON is PropertyOneString – a String value of the enumeration, but we are using the Name setting on the attribute to rename this to PropertyOne.  So, it looks like the same property in .NET CLR and within the JSON.
 
-# 4. Serialising JSON dates in Javascript
+## 4. Serialising JSON dates in Javascript
 
 Unfortunately, [Douglas Crockford’s JSON2](http://www.json.org/js.html) utility for serialisation of Javascript objects into JSON does not convert the date into the format that the DataContractJsonSerializer understands.
 

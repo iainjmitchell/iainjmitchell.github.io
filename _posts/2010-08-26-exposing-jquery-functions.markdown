@@ -5,7 +5,7 @@ date:   2010-08-26 08:19
 categories: jQuery
 description: A technique for exposing public functions on jQuery plugins.
 ---
-# Introduction
+## Introduction
 
 For some [jQuery plugins](http://docs.jquery.com/Plugins/Authoring) it would be useful if we could expose one or more functions, so that we can interact with it from Javascript outside the plugin. If we follow the standard mechanism of plugin authoring, we can only interact with the it at the moment of initialisation. This post will look at two mechanisms that can be used to expose and access plugin functions.
 
@@ -29,7 +29,7 @@ $('.myDiv').mediaPlayer(options);
 
 Now suppose we now want to interact with our mediaPlayer from outside.  For example, we may want to trigger the media player to play a certain file.  It would be useful if we could have a play() function on our plugin so we can trigger this action.  So, how can we do this?
 
-# Class and Function Mechanism
+## Class and Function Mechanism
 
 With the standard mechanism of building a jQuery plugin we always ensure that the plugin function returns **this** (the current context of the plugin).  The reason for returning the current context is that it allows the plugin call to be chained onto another plugin call.  For example:
 
@@ -98,7 +98,7 @@ $('.myDiv')
    .otherPlugin();
 ```
 
-# Execution Through apply() Mechanism
+## Execution Through apply() Mechanism
 
 An alternative, and my preferred approach, is to execute the ‘public’ functions in the main plugin function by use of the **apply()** command.  For this approach to work the plugin function has to be effectively overloaded, so that it can be used in two ways.  It needs to retain it’s constructive form which in out case takes one argument of options, but it also needs to be able to accept an alternative call that takes a string argument (function name) and any additional arguments that this function requires.
 
@@ -173,7 +173,7 @@ $('.myDiv')
    .mediaPlayer('play', url2);
 ```
 
-# Conclusion
+## Conclusion
 
 In this post I’ve looked at two mechanisms that can be used to expose functions on jQuery plugins.  The first of these is the **Class and Function Mechanism** that exposes ‘public’ functions by returning an instance of a class from the plugin initialisation function.  Although this does allow functions to be exposed, it does break jQuery chaining and so is not ideal.  
 

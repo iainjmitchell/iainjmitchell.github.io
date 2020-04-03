@@ -6,11 +6,11 @@ categories: .NET, WCF
 description: An explanation of IExtensibleObject interface in .NET and it's use in WCF. 
 ---
 
-# Introduction
+## Introduction
 
 One of the key features of Windows Communication Foundation (WCF) is the ability to extend various parts of the framework, by adding and/or replacing behaviours.  Many of these extension points are implemented by using the **IExtensibleObject** interface.  This post is going to examine how this works and the reasons for using it.
 
-# The IExtensibleObject Interface
+## The IExtensibleObject Interface
 
 Classes implement IExtensibleObject in order to be extendible.  The interface is defined in .NET as:
 
@@ -48,7 +48,7 @@ public class ExtendableClass: IExtensibleObject<ExtendableClass>
 
 The class adds a setter to the Extensions property, and ensures that the property is initialised during class construction.
 
-### Implementing an extension (via IExtension)
+## Implementing an extension (via IExtension)
 
 In order to be added to the IExtensibleObject.Extensions collection, the class has to implement the generic interface IExtension.  This is defined in .NET as:
 
@@ -83,7 +83,7 @@ public class ExtensionClass: IExtension<ExtendableClass>
 }
 ```
 
-### Putting it together
+## Putting it together
 
 Here is an example of the ExtendableClass and ExtensionClass in action:
 

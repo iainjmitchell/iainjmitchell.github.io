@@ -6,13 +6,13 @@ categories: jQuery, WCF, AJAX
 description: Getting jQuery to talk to WCF (one of two).
 ---
 
-# Introduction
+## Introduction
 
 Windows Communication Foundation (**WCF**) is the swiss army knife of the software communication world.  Even though most seem to use it as a replacement for SOAP web services or remoting in their .NET framework applications, it is actually also darn good at talking and being exposed to other none .NET environments.
 
 In this and it’s accompanying post I am going to cover the steps required to get **JQuery** and **WCF** “talking”.  This post will focus on the communication between the two using JQuery **Ajax **(Asynchronous JavaScript and XML).  The concluding post will look at error/fault handling between the two.
 
-# Creating the WCF service
+## Creating the WCF service
 
 The easiest way of setting up a WCF for use with JQuery is exposing the service through IIS, like a standard ASP.NET web service.  With Visual Studio 2008 and onwards there is a template for creating such a service.
 
@@ -26,7 +26,7 @@ This file is saying when a request comes in please start the service called “M
 
 There will be a service defined in the web.config file of the same name.  The service code is stored either in a dll in the bin or in the app_code of the virtual directory (N.B. The service implementation code has to be stored in a class called **MyWebService** in the **MyApp.Web.Service** namespace).
 
-# Defining the Service
+## Defining the Service
 
 The key to getting JQuery and WCF to communicate is the how they send their objects and other values across the wire.  Obviously, JQuery cannot utilise WCF DataContacts and .NET types, so we have to serialise/deserialise any outgoing/incoming values into **JSON** (JavaScript Object Notation).
 
@@ -55,7 +55,7 @@ public class MyService: IMyService
 
 The setting of ResponseFormat and RequestFormat to Json informs WCF to use the **DataContractJsonSerializer** on any incoming arguments and outgoing result.
 
-# Setting up the web.config
+## Setting up the web.config
 
 The web.config has to be updated to include the WCF service.  If you have used the WCF service project in Visual Studio this will have already been automatically created for you.  However, it is likely that the service endpoint will need altering to allow JQuery communication.  The reason for this is that the service endpoint MUST be exposed using **WebHttpBinding**.  This is the only type of binding that supports the transfer of JSON objects to and from JQuery.
 
@@ -69,7 +69,7 @@ Remember, the service name MUST match the value in the services .svc file and th
 
 Once all these components are installed in the appropriate place within the IIS virtual directory then your Jquery WCF service is ready to go.
 
-# The JQuery client side
+## The JQuery client side
 
 The JQuery Ajax call can be used to access the WCF service, for example:
 
@@ -95,7 +95,7 @@ You may also notice that the data is a hardcoded JSON string.  The important thi
 
 The final point to mention is accessing the result.  In the success code you’ll notice that it is passed a response object.  This will contain a property named _&lt;methodname&gt;_**Result** containing the result from the WCF call.
 
-# Conclusion
+## Conclusion
 
 In this article I have demonstrated the steps required to get JQuery to communicate with a WCF service.
 

@@ -10,7 +10,7 @@ The [Repository Pattern](http://martinfowler.com/eaaCatalog/repository.html) is 
 
 This post is going to look at constructing a generic repository to use against a mongoDB data store, and because I want to show how ‘hip’ I am, the example will be in coffeescript with nodejs.
 
-# Prerequisites
+## Prerequisites
 
 You will need:
 
@@ -18,7 +18,7 @@ You will need:
 * [coffeescript](https://www.npmjs.org/package/coffee-script) npm package (npm install -g coffee-script)
 * [mongojs](https://github.com/gett/mongojs) npm package (npm install -g mongojs)
 
-# Implementing Create and Read operations
+## Implementing Create and Read operations
 
 The first requirement of our repository is that it needs to connect to the mongoDB database, which can be implemented in the classes constructor.
 
@@ -72,7 +72,7 @@ repository.find(query, (donkeys) ->
 )  
 ```
 
-# Updating and Deleting
+## Updating and Deleting
 
 Now that we have our objects added to the data store, we also need to be able to make amendments to, and delete them. In order to find the records that we want to change, the .update() method must also accept a query object (see below).
 
@@ -90,7 +90,7 @@ remove: (query) ->
     @db[@objectName].remove(query)  
 ```
 
-# Putting it all together
+## Putting it all together
 
 Our resulting repository code will resemble:
 
@@ -136,7 +136,7 @@ repository.find(query, (donkeys) ->
     #chris removed  
 )  
 ```
-# Conclusion
+## Conclusion
 
 In this post I have demonstrated how a generic repository can easily be implemented in a dynamic language against a mongoDB database. You may very well be asking that if it is so simple then why bother with the repository at all? I would always argue that the abstraction of the data store is crucial to even the simplest of applications, what if the data suddenly needed to be stored in a different data store? By abstracting the data store logic out, we keep our domain code lean and free of vender specific implementation detail.
 
