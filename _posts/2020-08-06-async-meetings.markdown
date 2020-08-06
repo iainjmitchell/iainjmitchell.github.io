@@ -11,7 +11,7 @@ https://www.merriam-webster.com/dictionary/asynchronous
 
 The current pandemic has suddenly thrust many of us into remote ways of working.  This post looks at Asynchronous (Async) Meetings, how to make them effective and how to conduct one in a tool such as Slack/Microsoft Teams.
 
-# What is an Async meeting?
+## What is an Async meeting?
 
 An Async meeting doesn't require all participants to meet and discuss a topic at the same time.  Instead, the meeting happens in written form via a shared document or in a channel of a tool such as Slack or Microsoft Teams.
 
