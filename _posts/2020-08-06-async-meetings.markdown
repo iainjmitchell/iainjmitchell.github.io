@@ -7,8 +7,7 @@ description: An examination of Asynchronous (Async) Meetings, how to make them e
 ---
 
 > Asynchronous - not simultaneous or concurrent in time : not synchronous
-
-https://www.merriam-webster.com/dictionary/asynchronous
+###### [https://www.merriam-webster.com/dictionary/asynchronous](https://www.merriam-webster.com/dictionary/asynchronous)
 
 The current pandemic has suddenly thrust many of us into remote ways of working.  This post looks at Asynchronous (Async) Meetings, how to make them effective and how to conduct one in a tool such as Slack/Microsoft Teams.
 
