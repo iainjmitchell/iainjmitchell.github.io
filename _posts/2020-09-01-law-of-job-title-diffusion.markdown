@@ -8,7 +8,7 @@ description: Explanation of a new law about job titles and there impact upon tec
 
 I've been trying to put into words a phenomenon that I've increasingly seen in software organisations.  This is my first attempt in describing what I've called the **Law of Job Title Diffusion**:
 
->> An organisations number of tools, languages, frameworks and source code repositories increases with every job title introduced.
+> An organisations number of tools, languages, frameworks and source code repositories increases with every job title introduced.
 
 My hypothesis is that in organisations with lower numbers of engineering job titles there are fewer programming languages, frameworks and tools in play.  The source code is also more likely to be concentrated in a smaller number of repositories.  
 
