@@ -6,7 +6,7 @@ categories: management, systems thinking
 description: My law of Job Title Diffusion in a causal loop diagram with intervention!
 ---
 
-In my [previous post](/blog/law-of-job-title-diffusion) I covered the phenomenon of **Job Title Diffusion**.  That is the impact of a variety of Rob Titles can have on a organisation.
+In my [previous post](/blog/law-of-job-title-diffusion) I covered the phenomenon of **Job Title Diffusion**.  That is the impact of a variety of job titles can have on a organisation.
 
 Recently, I've had to examine this in more detail and found that a **Causal Loop Diagram** really helped to illustrate and understand the problem (see [this post](/blog/ability-to-cope) for more details about Causal Loop Diagrams).  What I ended up with is the diagram below.
 
