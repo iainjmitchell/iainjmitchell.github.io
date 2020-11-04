@@ -2,7 +2,7 @@
 layout: post
 title:  "Alerting, Monitoring, and Diagnostics"
 date:   2020-11-04 09:00:00
-categories: management, systems thinking
+categories: operability
 description: Examination of the differences and approaches to Alerting, Monitoring, and Diagnostics for software systems 
 ---
 
