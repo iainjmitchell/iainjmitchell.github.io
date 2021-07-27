@@ -12,7 +12,7 @@ Many years ago when I worked in a call centre they had a tracking system built i
 
 In spite of my bad experiences of time tracking, I've recently decided to start tracking my own time within work.  The motivation for this is that in a technical leadership role my own time becomes subjected to the System Trap of [Tragedy of the Commons](./tragedy-of-the-commons).  I have multiple people, initiatives, aims, requests all fighting for my attention.  
 
-For a while I have been using an [Eisenhower Matrix](https://en.wikipedia.org/wiki/Time_management#The_Eisenhower_Method) to help determine where I should spend my time, but the missing data is how much of my time am I spending on this versus other 
+For a while I have been using an [Eisenhower Matrix](https://en.wikipedia.org/wiki/Time_management#The_Eisenhower_Method) to help determine where I should spend my time, but the missing data is how much of my time I am spending on this versus other 
 day-to-day activities.  This is where _I believe_ the time tracking data would be useful.  There is also a possibility of using this data to educate those who are fighting for my time, as visualising and educating is a way out of this system trap.
 
 My Minimum Viable Product(MVP) for time capture is using a Google Sheet to record the time data and the various activity 'tags' that I wish to record time against.  With this data recorded it is straightforward to build visualisations of the information.
