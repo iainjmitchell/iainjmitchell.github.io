@@ -21,7 +21,7 @@ My Minimum Viable Product(MVP) for time capture is using a Google Sheet to recor
 
 In the image above it shows the visualisation that I use in my time tracker.  For a selected start date and number of days it will generate a log of the activities and a pie chart of the percentage of each activity tag.
 
-What have I learned so far?  I've noticed that there is an element of [Observer Effect](https://en.wikipedia.org/wiki/Observer_effect_(physics))) occurring.  The fact that I am now recording what I'm doing has caused me to think more about how I am using my time.  It certainly seems like I am procrastinating less and being more selective about which activities I am doing.
+What have I learned so far?  I've noticed that there is an element of [Observer Effect](https://en.wikipedia.org/wiki/Observer_effect_(physics)) occurring.  The fact that I am now recording what I'm doing has caused me to think more about how I am using my time.  It certainly seems like I am procrastinating less and being more selective about which activities I am doing.
 
 It is only an experiment at the moment and it will be interesting to see whether I stick to it and whether it proves to be useful information (is the value of the information worth the measurement?).  Perhaps I should also be mindful that I never get to the level of adding toilet breaks!
 
