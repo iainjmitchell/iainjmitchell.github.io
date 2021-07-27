@@ -6,7 +6,7 @@ categories: management, systems thinking
 description: Looking at why I've started tracking my own time
 ---
 
-Time tracking is a very emotive subject with even the mention of the words likely to cause offense or an immediate defensive stance.  This is hardly surprising when many peoples experience of time tracking is either a form of corporate Orwellian nightmare or a simple box ticking exercise to try and cost for charging or accountancy purposes.
+Time tracking is a very emotive subject with even the mention of the words likely to cause offense or an immediate defensive stance.  This is hardly surprising when many peoples experience of time tracking is either a corporate Orwellian nightmare or a misguided attempt to attribute cost to projects or initiatives.
 
 Many years ago when I worked in a call centre they had a tracking system built into the phones with a series of codes that you had to enter which included for breaks and visiting the toilet.  It's not clear what they were trying to measure with the latter, perhaps they were interested in who had the weakest bladder? It was all very creepy, not helped by the knowledge that there was a supervisor who spent most of the time watching the real time statuses of all the staff and checking on people who had been on extended toilet breaks.  Unfortunately for many sectors this has only got worse and worryingly the [supervisors are being replaced with AI](https://www.theverge.com/2019/4/25/18516004/amazon-warehouse-fulfillment-centers-productivity-firing-terminations).
 
