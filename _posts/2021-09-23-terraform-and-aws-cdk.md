@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Terraform or AWS CDK"
+title:  "Terraform CDK or AWS CDK"
 date:   2021-09-08 09:00:00
 categories: operability, aws
 description: Comparison between the Terraform CDK and AWS CDK 
