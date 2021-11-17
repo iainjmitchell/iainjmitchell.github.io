@@ -4,7 +4,7 @@ email: iainjmitchell@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   The website of iainjmitchell, a Software Practitioner from Manchester UK.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://iainjmitchell.com" # the base hostname & protocol for your site
+url: "https://iainjmitchell.com" # the base hostname & protocol for your site
 twitter_username: iainjmitchell
 github_username:  iainjmitchell
 permalink: /blog/:title

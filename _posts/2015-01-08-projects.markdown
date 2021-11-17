@@ -17,7 +17,7 @@ description: The effects that a project mentality has upon teams that are trying
 
 
 # What is the difference between BAU and project development work?
-They both involve changes to the software, maybe to a database, hopefully they are tested and then they are released out in the wild.  Except usually the project work is not released out into the wild, it sits there waiting for the rest of the project to be finished or it is released [feature switched](http://en.wikipedia.org/wiki/Feature_toggle) off.
+They both involve changes to the software, maybe to a database, hopefully they are tested and then they are released out in the wild.  Except usually the project work is not released out into the wild, it sits there waiting for the rest of the project to be finished or it is released [feature switched](https://en.wikipedia.org/wiki/Feature_toggle) off.
 
 Sometimes project development work cannot be released because it is non-releasable, for example a 'front-end' ticket that also requires the 'back-end' ticket to be completed before releasing.
 

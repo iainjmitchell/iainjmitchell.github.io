@@ -6,7 +6,7 @@ categories: nodejs, gulp
 description: How to automate the running of zombie tests using gulp
 ---
 
-For the latest nodejs website I've been working on, I wanted to write a couple of full stack tests using the headless browser [zombie](http://zombie.labnotes.org/).  I also wanted to automate the running of these tests using the task runner [gulp](http://gulpjs.com/).
+For the latest nodejs website I've been working on, I wanted to write a couple of full stack tests using the headless browser [zombie](https://zombie.labnotes.org/).  I also wanted to automate the running of these tests using the task runner [gulp](https://gulpjs.com/).
 
 > N.B. If you want to try any of the following examples, you'll need the following packages from NPM:
 
@@ -17,7 +17,7 @@ npm install gulp-mocha --save-dev
 npm install gulp-develop-server --save-dev
 ```
 
-I decided to write my tests using [Mocha](http://mochajs.org/), though alternatively you can use pretty much any other node testing framework.  Here is an example of one my tests:
+I decided to write my tests using [Mocha](https://mochajs.org/), though alternatively you can use pretty much any other node testing framework.  Here is an example of one my tests:
 
 ```javascript
 var Browser = require('zombie');

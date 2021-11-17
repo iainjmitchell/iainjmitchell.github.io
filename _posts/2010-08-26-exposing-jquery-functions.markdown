@@ -7,7 +7,7 @@ description: A technique for exposing public functions on jQuery plugins.
 ---
 ## Introduction
 
-For some [jQuery plugins](http://docs.jquery.com/Plugins/Authoring) it would be useful if we could expose one or more functions, so that we can interact with it from Javascript outside the plugin. If we follow the standard mechanism of plugin authoring, we can only interact with the it at the moment of initialisation. This post will look at two mechanisms that can be used to expose and access plugin functions.
+For some [jQuery plugins](https://docs.jquery.com/Plugins/Authoring) it would be useful if we could expose one or more functions, so that we can interact with it from Javascript outside the plugin. If we follow the standard mechanism of plugin authoring, we can only interact with the it at the moment of initialisation. This post will look at two mechanisms that can be used to expose and access plugin functions.
 
 This post will be based around the following mediaPlayer fictional plugin:
 
@@ -41,7 +41,7 @@ $('.myDiv')
    .otherPlugin();
 ```
 
-There is another approach to building jQuery plugins, called the **class and function** approach (see [this](http://fuelyourcoding.com/jquery-plugin-design-patterns-part-i/) excellent article of jQuery design patterns).  Instead of returning the current context, the jQuery plugin creates and then returns a new instance of a JavaScript class.  So, our mediaPlayer plugin could be created in the following way:
+There is another approach to building jQuery plugins, called the **class and function** approach (see [this](https://fuelyourcoding.com/jquery-plugin-design-patterns-part-i/) excellent article of jQuery design patterns).  Instead of returning the current context, the jQuery plugin creates and then returns a new instance of a JavaScript class.  So, our mediaPlayer plugin could be created in the following way:
 
 ```javascript
 (function($) {
@@ -146,7 +146,7 @@ The example below shows how we might use this mechanism to build our mediaPlayer
 
 When the plugin function is called the first argument is examined to see what type it is.  If this is NOT a string it is a call to initialise a mediaPlayer and so the createMediaPlayer() method is executed by using the apply() command.  It uses apply as it 1) ensures that the context is correct (**this** is passed as the context); and 2) allows us to pass the argument(s) without caring about how many there are.
 
-If the first argument is a string, then this must be the name of the function that is required to be executed.  A new arguments array is prepared by stripping off the first argument (see [this](http://anotherdeveloperblog.co.uk/post/Using-the-arguments-array-like-a-normal-array.aspx) blog post about splice), as the called method won’t need this.  Then the named function is executed by calling apply() and passing the current context and our new list of arguments.  You might notice that when this named function is executed it has to retrieved from the commands object by using the bracket notation.   This is required for the apply() function to be able to execute functions dynamically from string values.
+If the first argument is a string, then this must be the name of the function that is required to be executed.  A new arguments array is prepared by stripping off the first argument (see [this](https://anotherdeveloperblog.co.uk/post/Using-the-arguments-array-like-a-normal-array.aspx) blog post about splice), as the called method won’t need this.  Then the named function is executed by calling apply() and passing the current context and our new list of arguments.  You might notice that when this named function is executed it has to retrieved from the commands object by using the bracket notation.   This is required for the apply() function to be able to execute functions dynamically from string values.
 
 This is how we would initialise this plugin and call the play() function:
 

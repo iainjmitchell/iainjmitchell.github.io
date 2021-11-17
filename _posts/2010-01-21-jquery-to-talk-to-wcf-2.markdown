@@ -180,7 +180,7 @@ Now that we have our custom error handler and custom behavior, we just need to a
 
 Here is an updated web.config from the previous article, which has the error behavior added to the service endpoint:
 
-[![Web.config set up with Json error handling behavior](http://iainjmitchell.com/blog/wp-content/uploads/2010/01/JsonErrorConfig.png "Web.config set up with Json error handling behavior")](/images/JsonErrorConfig.png)
+[Web.config set up with Json error handling behavior](/images/JsonErrorConfig.png)
 
 The behavior extensions section includes an entry for our previously defined **JsonWebHttpBehaviorElement**.  N.B. The type must be the full name of the class which includes namespace, assembly, version, culture and public key token.  If this is not all specified then WCF will probably fail in the loading of the behavior.
 
@@ -207,7 +207,7 @@ Here is the Jquery.Ajax call from the previous article, altered to include the W
 });
 ```
 
-As you can see, the error handling function has been altered to create a jsonFault object from the JSON contained in the responseText property of the message.  I’m using the JSON.parse(string) function of [this](http://json.org/json2.js) JSON library to perform the conversion.  Once we have the object we can access the WCF fault data contract properties on it (this is my outer JsonFault fault class, the .Detail property would contain the specific WCF fault).
+As you can see, the error handling function has been altered to create a jsonFault object from the JSON contained in the responseText property of the message.  I’m using the JSON.parse(string) function of [this](https://json.org/json2.js) JSON library to perform the conversion.  Once we have the object we can access the WCF fault data contract properties on it (this is my outer JsonFault fault class, the .Detail property would contain the specific WCF fault).
 
 ## Conclusion
 

@@ -6,7 +6,7 @@ categories: Coffeescript, DDD, MongoDB, nodejs
 description: How to implement the Repository pattern in nodejs against a MongoDB Nosql datastore. 
 ---
 
-The [Repository Pattern](http://martinfowler.com/eaaCatalog/repository.html) is a useful mechanism to abstract the mechanics of the data store away from the business logic. There are various ways of implementing a repository against a relational database, the mechanics could use plain old SQL or something more exotic like nHibernate or Entity Framework.
+The [Repository Pattern](https://martinfowler.com/eaaCatalog/repository.html) is a useful mechanism to abstract the mechanics of the data store away from the business logic. There are various ways of implementing a repository against a relational database, the mechanics could use plain old SQL or something more exotic like nHibernate or Entity Framework.
 
 This post is going to look at constructing a generic repository to use against a mongoDB data store, and because I want to show how ‘hip’ I am, the example will be in coffeescript with nodejs.
 
@@ -14,7 +14,7 @@ This post is going to look at constructing a generic repository to use against a
 
 You will need:
 
-* [nodejs](http://nodejs.org/download/) & [mongoDB](http://docs.mongodb.org/manual/installation/) installed
+* [nodejs](https://nodejs.org/download/) & [mongoDB](https://docs.mongodb.org/manual/installation/) installed
 * [coffeescript](https://www.npmjs.org/package/coffee-script) npm package (npm install -g coffee-script)
 * [mongojs](https://github.com/gett/mongojs) npm package (npm install -g mongojs)
 

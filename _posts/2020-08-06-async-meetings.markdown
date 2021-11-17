@@ -37,7 +37,7 @@ Finally, it is important to get commitment from each of the participants to cont
 
 ## Running an Async meeting in Slack/Microsoft Teams
 
-Tools such as [Slack](https://slack.com) and [Microsoft Teams](http://teams.microsoft.com) are a perfect medium for running Async meetings. Here are a few hints to using the effectively.
+Tools such as [Slack](https://slack.com) and [Microsoft Teams](https://teams.microsoft.com) are a perfect medium for running Async meetings. Here are a few hints to using the effectively.
 
 To begin with, have a dedicated channel for the meeting.  This should be well named and be archived once the meeting has concluded.  Furthermore, this should be private to virtually close the door on the meeting. Though this shouldn't discourage from adding useful participants at any point in the meeting.
 

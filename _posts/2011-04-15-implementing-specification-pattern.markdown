@@ -6,7 +6,7 @@ categories: .NET, Design Patterns
 description: How to implement the specification pattern in .NET.
 ---
 
-Recently I have been reading Eric Evans excellent book on [Domain Driven Design](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215).  One of the patterns discussed in this book is the **Specification Pattern**, which was conceived by Eric Evans and Martin Fowler (see [here](http://www.martinfowler.com/apsupp/spec.pdf) for full description).
+Recently I have been reading Eric Evans excellent book on [Domain Driven Design](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215).  One of the patterns discussed in this book is the **Specification Pattern**, which was conceived by Eric Evans and Martin Fowler (see [here](https://www.martinfowler.com/apsupp/spec.pdf) for full description).
 
 This pattern is about encapsulating domain rules into specification classes.  These are then used to test if a particular domain object satisfies the criteria. Typically, they expose a public function called **IsSatisifiedBy()** that returns a boolean based on whether the object satisfies the specification.
 

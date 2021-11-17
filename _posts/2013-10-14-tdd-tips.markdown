@@ -9,7 +9,7 @@ description: 8 tips to help get better at Test Driven Development (TDD).
 
 **2. Simplest implementation** – The objective of the second (green) stage of TDD is to implement just enough to make the failing test pass.  Follow a “**You Ain’t Gonna Need It**” (YAGNI) approach and don’t try to second guess subsequent tests.
 
-**3. Don’t forget to refactor!** – The third stage of TDD is refactor, so after the simplest implementation deal with every [code smell](http://www.dcs.gla.ac.uk/~hcp/psd/lectures/badsmells.pdf "Summary of common code smells") you can find, rather than batching up problems for later.
+**3. Don’t forget to refactor!** – The third stage of TDD is refactor, so after the simplest implementation deal with every [code smell](https://www.dcs.gla.ac.uk/~hcp/psd/lectures/badsmells.pdf "Summary of common code smells") you can find, rather than batching up problems for later.
 
 **4. Delete redundant tests** – Sometimes we write a test to help us get somewhere, but it may become superseded by a following test.  If this is the case, delete the redundant test, it no longer has any value and may cause confusion in the future.
 

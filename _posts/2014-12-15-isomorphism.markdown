@@ -6,13 +6,13 @@ categories: Refactoring
 description: The relationship between isomorphism and naming in software.
 ---
 
-Recently I've been reading a fascinating book by Douglas Hofstadter called [Gödel, Escher, Bach](http://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach).  In an early chapter he introduces the concept of *Formal Systems*, which is any system of abstract thought based upon the model of mathematics. 
+Recently I've been reading a fascinating book by Douglas Hofstadter called [Gödel, Escher, Bach](https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach).  In an early chapter he introduces the concept of *Formal Systems*, which is any system of abstract thought based upon the model of mathematics. 
 
 Further into the book a Formal System called the PQ-system is proposed.
 
 > **DEFINITION:** 
 
-> *x*P-Q*x*- is an [axiom](http://en.wikipedia.org/wiki/Axiom), whenever *x* is composed of hyphens only.
+> *x*P-Q*x*- is an [axiom](https://en.wikipedia.org/wiki/Axiom), whenever *x* is composed of hyphens only.
 
 > **RULE OF PRODUCTION:**
 
@@ -20,9 +20,9 @@ Further into the book a Formal System called the PQ-system is proposed.
 > And suppose that *x*P*y*Q*z* is known to be a theorem.  
 > Then *x*P*y*-Q*z*- is a theorem.
 
-The author then asks the reader to discover the [decision procedure](http://en.wikipedia.org/wiki/Decision_problem) of the formal system, which is revealed to be that the first two hypen groups should add up, in length, to the third hypen group.
+The author then asks the reader to discover the [decision procedure](https://en.wikipedia.org/wiki/Decision_problem) of the formal system, which is revealed to be that the first two hypen groups should add up, in length, to the third hypen group.
 
-So [theorems](http://en.wikipedia.org/wiki/Theorem) would include:
+So [theorems](https://en.wikipedia.org/wiki/Theorem) would include:
 
 ```
 --P---Q-----

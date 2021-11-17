@@ -7,7 +7,7 @@ description: Tips on serialising to JSON through WCF.
 ---
 ## 1. Excluding null fields from serialisation
 
-By default all serialisers in WCF, including the [DataContractJsonSerializer](http://msdn.microsoft.com/en-us/library/system.runtime.serialization.json.datacontractjsonserializer.aspx), will automatically serialise ALL Data Member properties.  So, if your property is not set it will serialise as _null_.  
+By default all serialisers in WCF, including the [DataContractJsonSerializer](https://msdn.microsoft.com/en-us/library/system.runtime.serialization.json.datacontractjsonserializer.aspx), will automatically serialise ALL Data Member properties.  So, if your property is not set it will serialise as _null_.  
 
 For example, the following DataContract is serialised with PropertyTwo set to ‘aValue’ and PropertyOne left unset….
 
@@ -36,9 +36,9 @@ public class MyContract
 {"PropertyOne": null, "PropertyTwo": "aValue"}
 ```
 
-This can cause problems as there are jQuery plugins that require properties to be _undefined_ if they are not known  – because they use [extend()](http://api.jquery.com/jQuery.extend/) internally to add the default values.
+This can cause problems as there are jQuery plugins that require properties to be _undefined_ if they are not known  – because they use [extend()](https://api.jquery.com/jQuery.extend/) internally to add the default values.
 
-The solution to this is set the DataMember’s attribute [EmitDefaultValue](http://msdn.microsoft.com/en-us/library/system.runtime.serialization.datamemberattribute.emitdefaultvalue.aspx) option to **false**.  This will stop any unset properties being included in the serialised JSON.
+The solution to this is set the DataMember’s attribute [EmitDefaultValue](https://msdn.microsoft.com/en-us/library/system.runtime.serialization.datamemberattribute.emitdefaultvalue.aspx) option to **false**.  This will stop any unset properties being included in the serialised JSON.
 
 For example, the following DataContract (with EmitDefaultValue set to false) is serialised with PropertyTwo set to ‘aValue’ and PropertyOne left unset….
 
@@ -69,7 +69,7 @@ public class MyContract
 
 ## 2. Renaming properties in the JSON
 
-In the .NET world Microsoft naming standards state that public properties of an object have to start with a capital letter.  However, our friends in the Javascript world favour properties that start in lowercase.  Fortunately, we can avoid any potential conflict by the use of the DataMember’s [Name](http://msdn.microsoft.com/en-us/library/system.runtime.serialization.datamemberattribute.name.aspx) attribute. 
+In the .NET world Microsoft naming standards state that public properties of an object have to start with a capital letter.  However, our friends in the Javascript world favour properties that start in lowercase.  Fortunately, we can avoid any potential conflict by the use of the DataMember’s [Name](https://msdn.microsoft.com/en-us/library/system.runtime.serialization.datamemberattribute.name.aspx) attribute. 
 
 For example, if we JSON serialise the following DataContract… 
 
@@ -123,6 +123,6 @@ The property that is serialised into JSON is PropertyOneString – a String valu
 
 ## 4. Serialising JSON dates in Javascript
 
-Unfortunately, [Douglas Crockford’s JSON2](http://www.json.org/js.html) utility for serialisation of Javascript objects into JSON does not convert the date into the format that the DataContractJsonSerializer understands.
+Unfortunately, [Douglas Crockford’s JSON2](https://www.json.org/js.html) utility for serialisation of Javascript objects into JSON does not convert the date into the format that the DataContractJsonSerializer understands.
 
-Rick Strahl has made an adapted version of the JSON2 code that does handle Microsoft date formats.  See [this](http://www.west-wind.com/weblog/posts/729630.aspx) article for further details.  His version of JSON2 can be found directly in [this zip](http://www.west-wind.com/weblog/images/200901/ServiceProxy.zip) (it’s at the bottom of the in the ServiceProxy.js file). 
+Rick Strahl has made an adapted version of the JSON2 code that does handle Microsoft date formats.  See [this](https://www.west-wind.com/weblog/posts/729630.aspx) article for further details.  His version of JSON2 can be found directly in [this zip](https://www.west-wind.com/weblog/images/200901/ServiceProxy.zip) (it’s at the bottom of the in the ServiceProxy.js file). 

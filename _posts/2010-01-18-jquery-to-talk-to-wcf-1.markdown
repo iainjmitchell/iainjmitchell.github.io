@@ -63,7 +63,7 @@ It is also necessary to add the inbuilt WCF behavior, called **&lt;webHttp/&gt;*
 
 Our resulting web.config file will resemble the following:
 
-[![WCF web.config for JQuery communication](http://iainjmitchell.com/blog/wp-content/uploads/2010/01/jsonwcfconfig1.png "WCF web.config for JQuery communication")](/images/jsonwcfconfig1.png)
+[WCF web.config for JQuery communication](/images/jsonwcfconfig1.png)
 
 Remember, the service name MUST match the value in the services .svc file and the namespace/name of the service implementation in code (if you are not using the code behind setting in the .svc file).
 
@@ -91,7 +91,7 @@ $.ajax({
 
 The url is set to the location of the .svc file plus the name of the method you wish to call on service.  In the example above my .svc file is stored in a directory called services in the virtual directory.
 
-You may also notice that the data is a hardcoded JSON string.  The important thing to remember with this is that the parameter name (in this case “name”) MUST match the name of the parameter declared in the method.  For more complex objects there are JQuery libraries, such as [this](http://json.org/json2.js) excellent one by John Resig to do the conversion from javascript to a JSON string.
+You may also notice that the data is a hardcoded JSON string.  The important thing to remember with this is that the parameter name (in this case “name”) MUST match the name of the parameter declared in the method.  For more complex objects there are JQuery libraries, such as [this](https://json.org/json2.js) excellent one by John Resig to do the conversion from javascript to a JSON string.
 
 The final point to mention is accessing the result.  In the success code you’ll notice that it is passed a response object.  This will contain a property named _&lt;methodname&gt;_**Result** containing the result from the WCF call.
 

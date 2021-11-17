@@ -37,13 +37,13 @@ It is also important that inexperienced developers should get to work day to day
 
 ## 2. Impostor syndrome
 
-More experienced developers can suffer from [Impostor Syndrome](http://en.wikipedia.org/wiki/Impostor_syndrome) which gives them the impression that they know less than they do. Mixed with confident vocal inexperienced developers this may result in poor decisions being made.
+More experienced developers can suffer from [Impostor Syndrome](https://en.wikipedia.org/wiki/Impostor_syndrome) which gives them the impression that they know less than they do. Mixed with confident vocal inexperienced developers this may result in poor decisions being made.
 
 Impostor Syndrome can also cause people to overwork, so that they avoid being detected as an impostor.  This can lead to burn-out which is a serious problem in the IT industry. 
 
 ## 3. Unknowledgeable Non-Technical Team Members
 
-In Ben Goldacre's excellent book [Bad Science](http://en.wikipedia.org/wiki/Bad_Science_%28book%29) he claims that the media's flawed coverage of the MMR vaccine scare was a result of journalists falling prey to the **Dunning-Kruger Effect**. They did not understand anything about medical research and statistics to recognise that the study that suggested the link between autism and the vaccine was laughably weak.
+In Ben Goldacre's excellent book [Bad Science](https://en.wikipedia.org/wiki/Bad_Science_%28book%29) he claims that the media's flawed coverage of the MMR vaccine scare was a result of journalists falling prey to the **Dunning-Kruger Effect**. They did not understand anything about medical research and statistics to recognise that the study that suggested the link between autism and the vaccine was laughably weak.
 
 There is also a similar problem with non-technical team members, which can be particularly troublesome if they have client contact.  In one case I have seen a Project Manager was discussing everything from **divs** to **merging strategies** with the client. They then took the results of the discussion and presented it to the development team as tasks.  Unsurprisingly poor decisions had been made and the solution failed to meet the client goal.
 
@@ -53,4 +53,4 @@ As developers we can contribute to this by engaging in pseudo-technical conversa
 Dunning and Kuger's full paper can be read here: 
 
 [Unskilled and Unaware of It: How Difficulties in Recognizing One's Own
-Incompetence Lead to Inflated Self-Assessments](http://www.jerwood-no.org.uk/pdf/Dunning%20Kruger.pdf)
+Incompetence Lead to Inflated Self-Assessments](https://www.jerwood-no.org.uk/pdf/Dunning%20Kruger.pdf)

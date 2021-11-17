@@ -32,7 +32,7 @@ finally
 
 So, our proxy will now be closed properly, but what if something has gone wrong during one of our method calls to the proxy?  The underlying channel maybe in a **faulted** state.  Under these circumstances, calling Close() will result in an exception and the channel being left open in this faulted state.
 
-Therefore, it is necessary to check the [CommunicationState](http://msdn.microsoft.com/en-us/library/system.servicemodel.communicationstate.aspx) of the proxy before attempting to close it.  If the CommunicationState is **Faulted**, then the proxy should be aborted rather than closed.
+Therefore, it is necessary to check the [CommunicationState](https://msdn.microsoft.com/en-us/library/system.servicemodel.communicationstate.aspx) of the proxy before attempting to close it.  If the CommunicationState is **Faulted**, then the proxy should be aborted rather than closed.
 
 So, our resulting proxy closing code should resembled the following:
 

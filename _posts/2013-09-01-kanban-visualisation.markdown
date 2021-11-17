@@ -6,7 +6,7 @@ categories: Kanban, SCRUM
 description: 8 tips to help improve visualisation on a Kanban or Scrum board.
 ---
 
-A physical [Kanban](http://en.wikipedia.org/wiki/Kanban_(development)) or [Scrum](http://en.wikipedia.org/wiki/Scrum_(software_development)) board is usually one of the first steps that software development teams take when they set sail on an **Agile** course. The intention of these boards is to visualise the state of the current deliverable(s), so that all members of the team and the customer should be able to understand what is happening. This may act as a conversation starter or even help pre-empt delays in delivery.
+A physical [Kanban](https://en.wikipedia.org/wiki/Kanban_(development)) or [Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development)) board is usually one of the first steps that software development teams take when they set sail on an **Agile** course. The intention of these boards is to visualise the state of the current deliverable(s), so that all members of the team and the customer should be able to understand what is happening. This may act as a conversation starter or even help pre-empt delays in delivery.
 
 Unfortunately, many boards tend to end up as messy project task boards, which hide the subtle improvements that help reduce **waste** and **cycle time**. Think about your board, would your customer really understand what is going on?
 
@@ -31,6 +31,6 @@ Here are 8 easy fixes to improve Kanban or Scrum board visualisation:
 
 **6. Show movement** – Place an arrow avatar on cards that have moved, these can then be removed after the standup. This helps to identify the cards that are NOT moving, which may reveal hidden blockers or encourage other team members to assist.
 
-**7. Display rules/entry criteria** – If you have any rules about cards being moved from column to column, such as a ‘[definition of done](http://www.scrumalliance.org/community/articles/2008/september/what-is-definition-of-done-(dod))‘ or review, then it can help to have these rule displayed by the relevant column on the board.
+**7. Display rules/entry criteria** – If you have any rules about cards being moved from column to column, such as a ‘[definition of done](https://www.scrumalliance.org/community/articles/2008/september/what-is-definition-of-done-(dod))‘ or review, then it can help to have these rule displayed by the relevant column on the board.
 
 **8. Column space** – Ensure that there is enough room in the columns for the card capacity. I’ve often seen situations where cards have had to be placed on top of each other, which has a obvious negative effect on visualisation.

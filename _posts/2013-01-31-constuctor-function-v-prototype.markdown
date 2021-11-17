@@ -64,4 +64,4 @@ I’m a strong advocate of not revealing object state, so I very rarely use the 
 
 Some people like to use **prototype** as it also supports Object inheritance, but I would argue that sharing behaviour through aggregation is a much better approach than inheritance.    
 
-**Constructor Function** also has the advantage of allowing you to define private functions and internal composite objects, an approach also used in the excellent [Javascript module pattern](http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth "Javascript module pattern").
+**Constructor Function** also has the advantage of allowing you to define private functions and internal composite objects, an approach also used in the excellent [Javascript module pattern](https://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth "Javascript module pattern").
