@@ -20,13 +20,17 @@
         font-weight: 100;
         float: left;
         .site-title__picture {
-            padding: 5px 15px 5px 0px;
+            padding: 5px 5px 5px 0px;
             .avatar {
                 height: 50px;
                 vertical-align: inherit;
                 -webkit-border-radius: 50%;
                 -moz-border-radius: 50%;
                 border-radius: 50%;
+            }
+            .logo {
+                height: 50px;
+                vertical-align: inherit;
             }
         }
     }   
