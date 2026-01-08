@@ -12,7 +12,7 @@ exclude: ["gems"]
 
 # Build settings
 markdown: kramdown
-gems:
+plugins:
   - jekyll-redirect-from
 sass:
     style: compressed
