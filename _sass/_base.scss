@@ -1,6 +1,9 @@
-/**
- * Reset some basic elements
- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -12,19 +15,19 @@ body {
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    font-weight: 300;
+    font-weight: 400;
     color: $text-color;
     background-color: $background-color;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
-    font-size: 5em;
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font-family;
+    font-weight: 700;
+    line-height: 1.3;
 }
 
-/**
- * Set `margin-bottom` to maintain vertycal rhythm
- */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
@@ -56,24 +59,21 @@ li {
     }
 }
 
-
-
 a {
-    color: $brand-color;
+    color: $accent-color;
     text-decoration: none;
+    transition: color 0.2s ease;
     &:hover {
-        color: $brand-hover-color;
+        color: darken($accent-color, 15%);
     }
 }
 
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
+    color: $text-light;
+    border-left: 4px solid $accent-color;
     padding-left: $spacing-unit / 2;
     font-size: 18px;
-    letter-spacing: -1px;
     font-style: italic;
-
     > :last-child {
         margin-bottom: 0;
     }
@@ -83,43 +83,37 @@ pre,
 code {
     font-size: 15px;
     border: 1px solid $grey-color-light;
-    border-radius: 3px;    
+    border-radius: 6px;
+    background-color: #f1f3f5;
 }
 
 code {
-    padding: 1px 5px;
+    padding: 2px 6px;
 }
 
 pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
-
+    padding: 12px 16px;
+    overflow-x: auto;
     > code {
         border: 0;
-        padding-right: 0;
-        padding-left: 0;
+        padding: 0;
+        background: none;
     }
 }
 
 .wrapper {
-    max-width: -webkit-calc(1300px - (#{$spacing-unit} * 2));
-    max-width:         calc(1300px - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 $spacing-unit;
+    box-sizing: border-box;
 
     @include media-query($on-laptop) {
-        max-width: -webkit-calc(1300px - (#{$spacing-unit}));
-        max-width:         calc(1300px - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
+        padding: 0 $spacing-unit / 2;
     }
 }
 
 %clearfix {
-
     &:after {
         content: "";
         display: table;
@@ -128,27 +122,65 @@ pre {
 }
 
 .icon {
-
     > svg {
         display: inline-block;
         width: 16px;
         height: 16px;
         vertical-align: middle;
-
         path {
             fill: $grey-color;
         }
     }
 }
 
-.hero {
-    width:100%;
-    overflow:hidden; 
-    margin:0;   
-    .hero__image {
-        display:block; /*remove inline-block spaces*/
-        width:100%; /*make image streatch*/
-        margin:-15% 0;
+.section-heading {
+    font-family: $heading-font-family;
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: $spacing-unit * 2;
+    color: $brand-color;
+    position: relative;
+    &::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: $accent-color;
+        margin: 12px auto 0;
+        border-radius: 2px;
     }
-    margin-bottom: $spacing-unit;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95em;
+    letter-spacing: 0.3px;
+    transition: all 0.25s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn--primary {
+    background: $accent-color;
+    color: #fff;
+    &:hover {
+        background: darken($accent-color, 10%);
+        color: #fff;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba($accent-color, 0.35);
+    }
+}
+
+.btn--outline {
+    background: transparent;
+    color: $accent-color;
+    border: 2px solid $accent-color;
+    &:hover {
+        background: $accent-color;
+        color: #fff;
+        transform: translateY(-2px);
+    }
 }

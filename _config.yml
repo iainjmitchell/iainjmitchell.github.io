@@ -1,8 +1,8 @@
 # Site settings
 title: iainjmitchell
 email: iainjmitchell@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  The website of iainjmitchell, a Software Practitioner from Manchester UK.
+description: >
+  Iain Mitchell — Software Practitioner, technical leader, and architect based in Manchester, UK.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://iainjmitchell.com" # the base hostname & protocol for your site
 twitter_username: iainjmitchell

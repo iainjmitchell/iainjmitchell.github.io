@@ -1,23 +1,196 @@
 ---
-layout: default
+layout: home
 ---
-<div class="home">
-  <section class="home__posts">
-    {% for post in site.posts %}
-	  <article class="home__post">
-	  	<header>
-		    <h2>
-		      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-		    </h2>
-		    <span class="home__post__meta">{{ post.date | date: "%b %-d, %Y" }} on {{post.categories | join: ' '}}</span> 
-	    </header>
-	    <section class="home__post__except">
-	    	{{ post.content | strip_html | truncatewords:100}}
-	    </section>
-	    <div class="home__post__read">
-	    	<a href="{{ post.url | prepend: site.baseurl }}">Continue reading</a>
-		</div>
-	  </article>
-	{% endfor %}
-  </section>
-</div>
+<section class="hero">
+  <div class="hero__content">
+    <h1 class="hero__name">Iain Mitchell</h1>
+    <p class="hero__title">Software Practitioner</p>
+    <p class="hero__tagline">Technical leader with 20+ years' experience in architecture, coaching, and delivering customer value across cybersecurity, media, retail, and pharmaceutical industries.</p>
+    <div class="hero__cta">
+      <a href="/about" class="btn btn--primary">More About Me</a>
+      <a href="/blog" class="btn btn--outline">Read the Blog</a>
+    </div>
+  </div>
+  <div class="hero__scroll-hint">
+    <span>Scroll to explore</span>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 5v14M5 12l7 7 7-7"/>
+    </svg>
+  </div>
+</section>
+
+<section class="timeline-section">
+  <h2 class="section-heading">Career Journey</h2>
+  <div class="timeline">
+
+    <div class="timeline__item">
+      <div class="timeline__marker"></div>
+      <div class="timeline__content">
+        <div class="timeline__summary">
+          <img class="timeline__logo" alt="Snyk" src="/images/orgs/snyk.png">
+          <div class="timeline__summary-text">
+            <h3 class="timeline__role">Staff Architect</h3>
+            <h4 class="timeline__company">Snyk</h4>
+            <span class="timeline__date">Nov 2022 &mdash; Present</span>
+          </div>
+        </div>
+        <div class="timeline__detail"><div class="timeline__detail-inner">
+          <p>Supporting multiple teams in Test Orchestration with technical strategy, mentorship, and architectural direction. Facilitated FedRAMP certification, enabled migration of ~45% of Snyk Code traffic to a universal Test Orchestration, and increased Code AI Fixes by ~17%.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <div class="timeline__item">
+      <div class="timeline__marker"></div>
+      <div class="timeline__content">
+        <div class="timeline__summary">
+          <img class="timeline__logo" alt="MoneySuperMarket" src="/images/orgs/moneysupermarket.png">
+          <div class="timeline__summary-text">
+            <h3 class="timeline__role">Platform Architect</h3>
+            <h4 class="timeline__company">MoneySuperMarket</h4>
+            <span class="timeline__date">Dec 2021 &mdash; Nov 2022</span>
+          </div>
+        </div>
+        <div class="timeline__detail"><div class="timeline__detail-inner">
+          <p>Provided technical direction for Infrastructure, Data and Developer Experience teams. Oversaw migration from self-managed Kubernetes on EC2 to Amazon EKS, reducing management overhead by over 60%.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <div class="timeline__item">
+      <div class="timeline__marker"></div>
+      <div class="timeline__content">
+        <div class="timeline__summary">
+          <img class="timeline__logo" alt="Co-op" src="/images/orgs/co-op.png">
+          <div class="timeline__summary-text">
+            <h3 class="timeline__role">Principal Engineer</h3>
+            <h4 class="timeline__company">Co-op Digital</h4>
+            <span class="timeline__date">Apr 2019 &mdash; Oct 2021</span>
+          </div>
+        </div>
+        <div class="timeline__detail"><div class="timeline__detail-inner">
+          <p>Technically led teams in Funeral Care and Web Platform. 
+            Fostered collaborative culture through mob programming, reduced website hosting costs by over 50% via static site generation, and helped the organisation rapidly adapt to COVID-19 regulations.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <div class="timeline__item">
+      <div class="timeline__marker"></div>
+      <div class="timeline__content">
+        <div class="timeline__summary">
+          <img class="timeline__logo" alt="BBC" src="/images/orgs/bbc.png">
+          <div class="timeline__summary-text">
+            <h3 class="timeline__role">Software Engineering Manager</h3>
+            <h4 class="timeline__company">BBC &mdash; Platform API</h4>
+            <span class="timeline__date">Mar 2015 &mdash; Apr 2019</span>
+          </div>
+        </div>
+        <div class="timeline__detail"><div class="timeline__detail-inner">
+          <p>Oversaw engineers and product managers across two teams. Reduced graph database load by ~34% through Event Sourcing, cut BBC News video publication time from ~50 minutes to ~5 minutes, and implemented a FinOps culture saving ~&pound;50k/month in cloud costs.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <div class="timeline__item">
+      <div class="timeline__marker"></div>
+      <div class="timeline__content">
+        <div class="timeline__summary">
+          <img class="timeline__logo" alt="Code Computerlove" src="/images/orgs/code.webp">
+          <div class="timeline__summary-text">
+            <h3 class="timeline__role">Technical Director</h3>
+            <h4 class="timeline__company">Code Computerlove</h4>
+            <span class="timeline__date">Dec 2013 &mdash; Jan 2015</span>
+          </div>
+        </div>
+        <div class="timeline__detail"><div class="timeline__detail-inner">
+          <p>Oversaw all five engineering teams. Achieved 99.95% average uptime for a key client site and grew the junior/apprentice engineering cohort from 2 to 8 through university partnerships.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <div class="timeline__item">
+      <div class="timeline__marker"></div>
+      <div class="timeline__content">
+        <div class="timeline__summary">
+          <img class="timeline__logo" alt="TUI" src="/images/orgs/tui.png">
+          <div class="timeline__summary-text">
+            <h3 class="timeline__role">Principal Software Developer</h3>
+            <h4 class="timeline__company">LateRooms.com</h4>
+            <span class="timeline__date">Oct 2011 &mdash; Jun 2013</span>
+          </div>
+        </div>
+        <div class="timeline__detail"><div class="timeline__detail-inner">
+          <p>Technically led a team of engineers in the hotel connectivity domain. Identified and resolved a defect in availability logic that was causing ~&pound;500k/year in lost revenue.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <div class="timeline__item">
+      <div class="timeline__marker"></div>
+      <div class="timeline__content">
+        <div class="timeline__summary">
+          <div class="timeline__summary-text">
+            <h3 class="timeline__role">Principal Software Engineer</h3>
+            <h4 class="timeline__company">Selima</h4>
+            <span class="timeline__date">Jun 2008 &mdash; Oct 2011</span>
+          </div>
+        </div>
+        <div class="timeline__detail"><div class="timeline__detail-inner">
+          <p>Built custom HR, payroll and expense solutions for the public sector.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <div class="timeline__item">
+      <div class="timeline__marker"></div>
+      <div class="timeline__content">
+        <div class="timeline__summary">
+          <img class="timeline__logo" alt="Waters" src="/images/orgs/waters.png">
+          <div class="timeline__summary-text">
+            <h3 class="timeline__role">Software Control Engineer</h3>
+            <h4 class="timeline__company">Waters</h4>
+            <span class="timeline__date">Dec 2007 &mdash; Jun 2008</span>
+          </div>
+        </div>
+        <div class="timeline__detail"><div class="timeline__detail-inner">
+          <p>Software development for mass spectrometers and liquid chromatography systems.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <div class="timeline__item">
+      <div class="timeline__marker"></div>
+      <div class="timeline__content">
+        <div class="timeline__summary">
+          <img class="timeline__logo" alt="Parexel" src="/images/orgs/parexel.png">
+          <div class="timeline__summary-text">
+            <h3 class="timeline__role">Software Engineer &rarr; Team Leader</h3>
+            <h4 class="timeline__company">ClinPhone</h4>
+            <span class="timeline__date">Jul 2001 &mdash; Dec 2007</span>
+          </div>
+        </div>
+        <div class="timeline__detail"><div class="timeline__detail-inner">
+          <p>Progressed from Production Programmer to Software Engineering Team Leader, building IT solutions for the pharmaceutical industry.</p>
+        </div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="blog-preview">
+  <h2 class="section-heading">From the Blog</h2>
+  <div class="blog-preview__grid">
+    {% for post in site.posts limit:4 %}
+    <article class="blog-preview__card" data-animate>
+      <span class="blog-preview__meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+      <p>{{ post.content | strip_html | truncatewords: 30 }}</p>
+    </article>
+    {% endfor %}
+  </div>
+  <div class="blog-preview__more">
+    <a href="/blog" class="btn btn--outline">View All Posts</a>
+  </div>
+</section>
