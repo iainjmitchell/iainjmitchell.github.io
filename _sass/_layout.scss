@@ -139,6 +139,20 @@
     animation: fadeInUp 0.8s ease-out;
 }
 
+.hero__photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 24px;
+    border: 4px solid rgba(255,255,255,0.2);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    @include media-query($on-palm) {
+        width: 110px;
+        height: 110px;
+    }
+}
+
 .hero__name {
     font-family: $heading-font-family;
     font-size: 4em;
