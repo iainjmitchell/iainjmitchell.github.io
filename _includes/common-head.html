@@ -2,12 +2,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-<meta name="description" content="{% if page.description %}{{page.description}}{% else %}{{ site.description }}{% endif %}">
+{% seo %}
+
 <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 <noscript><style>[data-animate]{opacity:1!important;transform:none!important}.timeline__detail{grid-template-rows:1fr!important;opacity:1!important}</style></noscript>
-<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap' rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <script src="/js/scroll-animations.js" defer></script>

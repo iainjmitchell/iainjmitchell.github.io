@@ -1,18 +1,40 @@
 # Site settings
-title: iainjmitchell
+title: Iain Mitchell
+tagline: Software Practitioner
 email: iainjmitchell@gmail.com
 description: >
   Iain Mitchell — Software Practitioner, technical leader, and architect based in Manchester, UK.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://iainjmitchell.com" # the base hostname & protocol for your site
-twitter_username: iainjmitchell
-github_username:  iainjmitchell
+  Over 20 years' experience in cybersecurity, media, retail, and pharmaceutical industries.
+baseurl: ""
+url: "https://iainjmitchell.com"
 permalink: /blog/:title
 exclude: ["gems"]
+
+author:
+  name: Iain Mitchell
+  url: "https://iainjmitchell.com"
+
+social:
+  name: Iain Mitchell
+  links:
+    - https://github.com/iainjmitchell
+    - https://www.linkedin.com/in/iainjmitchell
+
+twitter:
+  username: iainjmitchell
+  card: summary
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /images/profile.jpg
 
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
 sass:
     style: compressed
